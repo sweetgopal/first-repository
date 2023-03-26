@@ -1,0 +1,2937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.3 20210610//EN" "JATS-journalpublishing1-3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.3" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="publisher-id">applsci</journal-id>
+      <journal-title-group>
+        <journal-title>Applied Sciences</journal-title>
+        <abbrev-journal-title abbrev-type="publisher">Appl. Sci.</abbrev-journal-title>
+        <abbrev-journal-title abbrev-type="pubmed">Applied Sciences</abbrev-journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2076-3417</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.3390/app12178457</article-id>
+      <article-id pub-id-type="publisher-id">applsci-12-08457</article-id>
+      <article-categories>
+        <subj-group>
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A Case Study on Implementing Agile Techniques and Practices: Rationale, Benefits, Barriers and Business Implications for Hardware Development</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-1645-0941</contrib-id>
+          <name>
+            <surname>Weichbroth</surname>
+            <given-names>Pawe&#x142;</given-names>
+          </name>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Falkowski-Gilski</surname>
+            <given-names>Przemys&#x142;aw</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Uhl</surname>
+            <given-names>Tadeus</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Lubniewski</surname>
+            <given-names>Zbigniew</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Zhongjie</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-applsci-12-08457">Department of Software Engineering, Faculty of Electronics, Telecommunications and Informatics, Gdansk University of Technology, 80-233 Gda&#x144;sk, Poland; <email>pawel.weichbroth@pg.edu.pl</email>; Tel.: +48-58-347-29-89</aff>
+      <pub-date pub-type="epub">
+        <day>24</day>
+        <month>08</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>09</month>
+        <year>2022</year>
+      </pub-date>
+      <volume>12</volume>
+      <issue>17</issue>
+      <elocation-id>8457</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>13</day>
+          <month>06</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>21</day>
+          <month>08</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2022 by the author.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <license license-type="open-access">
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Agile methodologies, along with the corresponding tools and practices, are claimed to facilitate teams in managing their work more effectively and conducting their work more efficiently while fostering the highest quality product within the constraints of the budget. Therefore, the rate of awareness and adoption of Agile frameworks both within and outside the software industry has increased significantly. Yet, the latest studies show that the adoption of Agile techniques and practices are not one-size-fits-all, and highlight the challenges, risks, and limitations regarding numerous domains. In this regard, the state-of-the-art literature provides comprehensive reading. However, in the case of hardware manufacturing, it seems to be sparse and fragmented. To fill this gap, the goal of this study is to analyze and present an in-depth account of the implementation of mix agile-oriented tools and practices. To tackle this goal, a single industry case study was undertaken, based on the primary data obtained through the interview protocol and the secondary data extracted from the project&#x2019;s documentation. The findings concern three areas. First, the rationale behind the implementation of agile for hardware development is explained. Second, the implemented agile techniques and practices are identified, as well as the supporting tools through which their adoption was successfully undertaken. Third, the areas positively impacted by their application are highlighted with the corresponding evaluation measures deployed; moreover, the barriers to adopting Agile practices encountered, and the benefits gained from particular techniques, are further discussed. The presented findings might be of great importance for both researchers and practitioners who are searching for empirical evidence regarding Agile-oriented implementations. Finally, in terms of both benefits and barriers, business implications for hardware development are formulated. Alongside this, numerous open issues and questions present interesting research avenues that concern, in particular, the effectiveness of collaboration and areas of communication through the lens of agile techniques and practices.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>agile</kwd>
+        <kwd>implementation</kwd>
+        <kwd>hardware development</kwd>
+        <kwd>case study</kwd>
+        <kwd>user experience</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>European Union</funding-source>
+          <award-id>RPMA.01.02.00-14-b528/18</award-id>
+        </award-group>
+        <funding-statement>This research is the result of the project entitled &#x201C;An Industry 4.0 Mobile Process Management System Supported by Artificial Intelligence&#x201D;, co-financed by the European Union from the European Regional Development Fund under the Regional Operational Program of the Mazovia Voivode ship for 2014&#x2013;2020, under grant agreement no. RPMA.01.02.00-14-b528/18.</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1-applsci-12-08457" sec-type="intro">
+      <title>1. Introduction</title>
+      <p>The frustrations around failures of software development projects in the 1990s led to the search for more effective and cost-efficient ways of organizing and managing tasks and resources [<xref ref-type="bibr" rid="B1-applsci-12-08457">1</xref>]. In early 2001, a group of software leaders met and discussed the possibilities of how to improve human productivity and performance, as well as how to bring value to the customers by delivering the expected software products [<xref ref-type="bibr" rid="B2-applsci-12-08457">2</xref>]. At that meeting, the participants neither introduced nor used &#x201C;agile&#x201D; during discussions, instead the words &#x201C;light&#x201D; and &#x201C;lightweight&#x201D; were more common, reflecting their attitudes to the issue of bringing new software to market faster [<xref ref-type="bibr" rid="B3-applsci-12-08457">3</xref>]. Eventually, two key opportunities were identified, namely shortening the time of delivery of the first version of the working software, and getting feedback from the users to confirm their requirements [<xref ref-type="bibr" rid="B4-applsci-12-08457">4</xref>]. This approach laid significant foundations for the Agile methodology as we know it today focused on speed to market, rapid feedback and continuous improvement [<xref ref-type="bibr" rid="B5-applsci-12-08457">5</xref>].</p>
+      <p>On the other hand, the hardware businesses have also come across many obstacles and hardships in their way of updating existing and developing new products. The reasons for their failures can be divided into three categories: technical, financial, and sales/marketing [<xref ref-type="bibr" rid="B6-applsci-12-08457">6</xref>]. It should be noted here that the second and third categories do not fall into the scope of our study, and will therefore not be further tackled. The first group of technical issues occurs during the development and early manufacturing stages often concern [<xref ref-type="bibr" rid="B6-applsci-12-08457">6</xref>]:<list list-type="bullet"><list-item><p>underestimating the product development;</p></list-item><list-item><p>underestimating the complexity of scaling to mass manufacturing;</p></list-item><list-item><p>poor quality testing;</p></list-item><list-item><p>product overcomplexity;</p></list-item><list-item><p>overpromising to customers.</p></list-item></list></p>
+      <p>To deal with these issues successfully, numerous methodologies, frameworks, and single methods have already been adopted by applying a different set of assumptions and settings, due to the unique needs of both the product and manufacturer. However, recent studies show that hardware development is enacted through agile methodologies [<xref ref-type="bibr" rid="B7-applsci-12-08457">7</xref>], or just arbitrarily selected agile practices [<xref ref-type="bibr" rid="B8-applsci-12-08457">8</xref>]. Similarly, our study falls into the scope of this modern but still insufficiently explored research domain. More specifically, the goal of this paper is to analyze and present an in-depth account of the implementation of agile techniques and practices, based on an industry case study of a project undertaken by the Tele and Radio Research Institute (TRRI) [<xref ref-type="bibr" rid="B9-applsci-12-08457">9</xref>] and managed together with Meritus Software Systems [<xref ref-type="bibr" rid="B10-applsci-12-08457">10</xref>].</p>
+      <p>The rest of the paper is structured as follows. In the <xref ref-type="sec" rid="sec2-applsci-12-08457">Section 2</xref>, the research background and related work are outlined. In <xref ref-type="sec" rid="sec3-applsci-12-08457">Section 3</xref>, the research design is specified. Next, in <xref ref-type="sec" rid="sec4-applsci-12-08457">Section 4</xref>, the findings of the study are presented, followed by the conclusions given in <xref ref-type="sec" rid="sec5-applsci-12-08457">Section 5</xref>.</p>
+    </sec>
+    <sec id="sec2-applsci-12-08457">
+      <title>2. Research Background and Related Work</title>
+      <sec id="sec2dot1-applsci-12-08457">
+        <title>2.1. Theoretical Background</title>
+        <p>In general, Agile is the umbrella term for a family of management practices [<xref ref-type="bibr" rid="B11-applsci-12-08457">11</xref>]. Nowadays, many other organizations are actively adopting agile project management [<xref ref-type="bibr" rid="B12-applsci-12-08457">12</xref>] as an iterative approach to delivering a project throughout its life cycle [<xref ref-type="bibr" rid="B13-applsci-12-08457">13</xref>]. The reasons for implementing Agile practices concern the more flexible and adaptive working structures [<xref ref-type="bibr" rid="B14-applsci-12-08457">14</xref>], active stakeholders and extensive user participation throughout the project [<xref ref-type="bibr" rid="B15-applsci-12-08457">15</xref>], higher performance visibility [<xref ref-type="bibr" rid="B16-applsci-12-08457">16</xref>], and transparency [<xref ref-type="bibr" rid="B17-applsci-12-08457">17</xref>], to name just a few.</p>
+        <p>Considering the software industry, the Agile Alliance [<xref ref-type="bibr" rid="B18-applsci-12-08457">18</xref>] is one of the most prominent organizations devoted to organizations and individuals that apply the values and principles of Agile. This non-profit, membership organization was founded on the Manifesto for Agile Software Development (ASD) [<xref ref-type="bibr" rid="B19-applsci-12-08457">19</xref>]. By nature, ASD refers to a group of software development methods based on iterative and incremental development [<xref ref-type="bibr" rid="B20-applsci-12-08457">20</xref>], where requirements and solutions evolve through collaboration between self-organizing cross-functional teams [<xref ref-type="bibr" rid="B19-applsci-12-08457">19</xref>]. The Agile Manifesto expresses four key values, defined as follows [<xref ref-type="bibr" rid="B21-applsci-12-08457">21</xref>]:<list list-type="order"><list-item><p>Individuals and interactions over processes and tools;</p></list-item><list-item><p>Working software over comprehensive documentation;</p></list-item><list-item><p>Customer collaboration over contract negotiation;</p></list-item><list-item><p>Responding to change over following a plan.</p></list-item></list></p>
+        <p>It should be noted and empathized here that, in the case of the fourth value, an agile view on the project means that responding to changes, instead of neglecting or even ignoring them, benefits the project by providing additional value.</p>
+        <p>Moreover, these four values are broken down and detailed through twelve supporting principles, formulated in the following way [<xref ref-type="bibr" rid="B22-applsci-12-08457">22</xref>]:<list list-type="order"><list-item><p>Our highest priority is to satisfy the customer through the early and continuous delivery of valuable software;</p></list-item><list-item><p>Welcome changing requirements, even late in development. Agile processes harness change for the customer&#x2019;s competitive advantage;</p></list-item><list-item><p>Deliver working software frequently, from a couple of weeks to a couple of months, with a preference for the shorter timescale;</p></list-item><list-item><p>Businesspeople and developers must work together daily throughout the project;</p></list-item><list-item><p>Build projects around motivated individuals. Provide them with the environment and support they need and trust them to get the job accomplished.</p></list-item><list-item><p>The most efficient and effective method of conveying information to and within a development team is face-to-face conversation;</p></list-item><list-item><p>Working software is the primary measure of progress;</p></list-item><list-item><p>Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely;</p></list-item><list-item><p>Continuous attention to technical excellence and good design enhances agility;</p></list-item><list-item><p>Simplicity, the art of maximizing the amount of incomplete work, is essential.</p></list-item><list-item><p>The best architectures, requirements, and designs emerge from self-organizing teams;</p></list-item><list-item><p>At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.</p></list-item></list></p>
+        <p>Based on the above principles, several agile methodologies have been built upon [<xref ref-type="bibr" rid="B23-applsci-12-08457">23</xref>], including Scrum [<xref ref-type="bibr" rid="B24-applsci-12-08457">24</xref>], Kanban [<xref ref-type="bibr" rid="B25-applsci-12-08457">25</xref>], and Extreme Programming (XP) [<xref ref-type="bibr" rid="B26-applsci-12-08457">26</xref>]. According to the 15th State of Agile Report [<xref ref-type="bibr" rid="B27-applsci-12-08457">27</xref>], Agile adoption within software development teams increased from 37% in 2020 to 86% in 2021, where Scrum was the most popular (66%), with an additional 15% of the two following derivations, namely ScrumBan (9%) and Scrum/XP (6%); the minority concern Kanban (6%), Iterative (4%), XP (1%), Lean Startup (1%), and others (5%), whereas 2% of the respondents did not know which Agile methodology was adopted.</p>
+        <p>More specifically, over the last two decades, several agile practices have been developed that rely on the interaction of self-organizing teams with cross-functional skillsets. Globally, across a broad range of industries in the software development domain [<xref ref-type="bibr" rid="B28-applsci-12-08457">28</xref>], the most commonly used tools by the individuals are [<xref ref-type="bibr" rid="B27-applsci-12-08457">27</xref>]:<list list-type="bullet"><list-item><p>Daily standups (87%), a team update meeting held each day [<xref ref-type="bibr" rid="B29-applsci-12-08457">29</xref>], where everyone involved is asked to report on what has been completed, and commit the future work to do; moreover, the occurred impediments (blocking factors) are discussed; typically, in Scrum, the daily standup is a 15-min time-boxed event [<xref ref-type="bibr" rid="B30-applsci-12-08457">30</xref>];</p></list-item><list-item><p>Retrospectives (83%), a meeting that is held at the end of an iteration [<xref ref-type="bibr" rid="B31-applsci-12-08457">31</xref>], with the aim of self-reflecting on what went well and what could be improved for the next iteration;</p></list-item><list-item><p>Sprint/iteration planning (83%), where a sprint, only used in relation to Scrum [<xref ref-type="bibr" rid="B32-applsci-12-08457">32</xref>], is a predefined, time-boxed period in which a team works to accomplish a set amount of work [<xref ref-type="bibr" rid="B33-applsci-12-08457">33</xref>], and an iteration, in the context of an Agile project, is a time-box during which development takes place [<xref ref-type="bibr" rid="B34-applsci-12-08457">34</xref>].</p></list-item></list></p>
+        <p>Considering agile planning, in particular involving workflows, tasks, and user stories, the three the most frequent practices are [<xref ref-type="bibr" rid="B27-applsci-12-08457">27</xref>]:<list list-type="bullet"><list-item><p>Kanban boards (77%), a visual-organization tool that tracks the workflow by depicting work items as cards at various stages of a development process, represented by labeled columns; in the simplest form, the board columns fall into three buckets: at the starts of the board is the &#x201C;To Do&#x201D; (or &#x201C;Ready&#x201D;) column which contains all the cards that are next up, the &#x201C;Doing&#x201D; (or &#x201C;In Progress&#x201D;) column include all the cards that are currently being worked on, and &#x201C;Done&#x201D; contains all cards that have been finished [<xref ref-type="bibr" rid="B35-applsci-12-08457">35</xref>];</p></list-item><list-item><p>Task boards (67%), in Scrum, a task board is a visual display of the progress of the Scrum team during a sprint [<xref ref-type="bibr" rid="B36-applsci-12-08457">36</xref>]; typically, a board is divided into four columns, namely: starting from the left, &#x201C;Stories&#x201D;, contains a list of all the user stories in the current sprint backlog, &#x201C;To Do&#x201D;, contains subtasks of the stories that work has not started on, &#x201C;In progress&#x201D; depicts all the tasks on that work has already begun, and &#x201C;Done&#x201D;, presents all the tasks that have been completed [<xref ref-type="bibr" rid="B37-applsci-12-08457">37</xref>];</p></list-item><list-item><p>Spreadsheets (66%), stands for a computer application used to create and manipulate spreadsheets, electronic documents in which data is arranged in tabular form and can be manipulated and used in calculations, along with formulas that relate the data. Currently, there is a plethora of spreadsheet applications on the software market, including both commercial and non-commercial, available for both desktop computers and mobile devices.</p></list-item></list></p>
+        <p>Having said that, one might ask: what are the benefits of being agile? There is no one simple answer to this question. However, the report from the 15th State of Agile survey shows that the implementation of agile has positively impacted areas within the organizations such as: managing changing priorities (70%), visibility (70%), business/IT alignment (66%), delivery speed/time to market (64%), team productivity (60%), and team morale (60%), just to quote a few. The impact was measured by various indicators, spanning from customer/user satisfaction (59%), business value (58%), business objectives achievements (50%), on-time delivery (48%), quality (48%), and productivity (41%), just to name a few.</p>
+      </sec>
+      <sec id="sec2dot2-applsci-12-08457">
+        <title>2.2. Agile-Oriented Frameworks for Hardware Development</title>
+        <p><bold>SAFe</bold>. The Scaled Agile Framework (SAFe), created by Dean Leffingwell, is a set of organizational and workflow patterns for implementing and scaling practices and techniques at the enterprise level in accordance with lean principles [<xref ref-type="bibr" rid="B38-applsci-12-08457">38</xref>]. SAFe is a body of knowledge that incorporates frameworks such as Scrum, Extreme Programming, Kanban and Lean at the team level [<xref ref-type="bibr" rid="B39-applsci-12-08457">39</xref>]. It advocates four levels: Value stream, Program, Portfolio and Team level [<xref ref-type="bibr" rid="B40-applsci-12-08457">40</xref>]. The principal values of SAFe, which are key to SAFe&#x2019;s effectiveness, concern: alignment, built-in quality, transparency, and program execution [<xref ref-type="bibr" rid="B41-applsci-12-08457">41</xref>]. In this line of thinking, the Scaled Agile organization provides six universal principles, outlining how SAFe applies to hardware development [<xref ref-type="bibr" rid="B42-applsci-12-08457">42</xref>]: <list list-type="order"><list-item><p>Organize Around Value;</p></list-item><list-item><p>Assume Variability and Preserve Options;</p></list-item><list-item><p>Build Incrementally, Integrate Frequently;</p></list-item><list-item><p>Design for Change;</p></list-item><list-item><p>Perform Work in Small Batches;</p></list-item><list-item><p>Build Continuous Integration for Hardware Development.</p></list-item></list></p>
+        <p>While SAFe is built on top of the agile methodology, harnessing its advantages, in particular, is based on ten immutable, underlying Lean-Agile principles; the above six principles have been arbitrarily selected and reformulated in the context of the hardware domain. Nevertheless, there is open space for creativity and innovation, since, as stated by the authors, &#x201C;they can be used to guide hardware engineers to create and adopt their own best practices&#x201D; [<xref ref-type="bibr" rid="B42-applsci-12-08457">42</xref>].</p>
+        <p><bold>Scrum for Hardware</bold>. Scrum for Hardware (or Scrum for HW) is a framework that combines Scrum with modular architecture and Lean/XP practices [<xref ref-type="bibr" rid="B43-applsci-12-08457">43</xref>], customizing the agile practices and techniques for hardware and system design. The Scrum in Hardware Guide defines 8 areas to consider before, during and after implementation, namely:<list list-type="order"><list-item><p>Uncertainty in Hardware Projects;</p></list-item><list-item><p>Stubs and Mock-Ups;</p></list-item><list-item><p>Modularize;</p></list-item><list-item><p>Continuously Integrate;</p></list-item><list-item><p>Interface Design;</p></list-item><list-item><p>Test and Data-Driven Development;</p></list-item><list-item><p>Team;</p></list-item><list-item><p>Working Product at the End of Each Sprint.</p></list-item></list></p>
+        <p>In general, the guide can be used by any organization, small or large, regardless of its field of activity, structure, or organization.</p>
+        <p><bold>Hybrid Stage-Gate</bold>. The Stage-Gate (SG) process is a conceptual and operational road map for moving a new-product project from idea to launch and beyond [<xref ref-type="bibr" rid="B44-applsci-12-08457">44</xref>]. In the simplest format, SG &#x201C;consists of two major components: <list list-type="order"><list-item><label>(1)</label><p>a series of stages, where the project team undertakes the work, obtains the needed information, and does the subsequent data integration and analysis, followed by;</p></list-item><list-item><label>(2)</label><p>gates, where go/kill decisions are made to continue to invest in the project&#x201D; [<xref ref-type="bibr" rid="B44-applsci-12-08457">44</xref>].</p></list-item></list></p>
+        <p>An overview of the general Stage-Gate system is depicted in <xref ref-type="fig" rid="applsci-12-08457-f001">Figure 1</xref>.</p>
+        <p>Stage-Gate is a macro model, designed to support selecting the projects to be followed by the model, and once selected, to map out the key stages, best practices, management techniques, roles, and responsibilities. On the other hand, there is an agile approach that brings micromanagement practices and techniques to the table, which are proven to foster adaptability, encourage creativity, and improve productivity. Cooper and Sommer introduced a hybrid approach, which incorporates Agile methods for physical product development [<xref ref-type="bibr" rid="B45-applsci-12-08457">45</xref>], by integrating them with the SG system, and then utilized them for manufactured or physical product development (hardware). In other words, they argue that &#x201C;Agile is normally applied as the project management method within the stages in Stage-Gate&#x201D;, while &#x201C;the stages remain, and Agile is applied within some stages&#x201D; [<xref ref-type="bibr" rid="B45-applsci-12-08457">45</xref>]. Moreover, Scrum is a favored methodology since it has been indicated as &#x201C;the most appropriate for hardware development&#x201D; for all case studies uncovered so far in industry. </p>
+        <p><bold>Modified Agile for Hardware Development (MAHD)</bold>. Based on the Agile principles, Simpson and Hinkle [<xref ref-type="bibr" rid="B46-applsci-12-08457">46</xref>] developed the Modified Agile for Hardware Development (MAHD) Framework, devoted to the manufacturing industry, in particular for products and portfolios that include a combination of electronics, mechanical components, as well as software elements [<xref ref-type="bibr" rid="B47-applsci-12-08457">47</xref>]. By design, MAHD takes into account the following physical products requirements [<xref ref-type="bibr" rid="B48-applsci-12-08457">48</xref>]:<list list-type="bullet"><list-item><p>allow for flexibility to change, but also freeze designs;</p></list-item><list-item><p>build quality plans and manage supply chains;</p></list-item><list-item><p>define electrical and mechanical product attributes;</p></list-item><list-item><p>develop documentation;</p></list-item><list-item><p>develop flexible prototyping and validation product strategies;</p></list-item><list-item><p>share resources and external partners.</p></list-item></list></p>
+        <p>MAHD promotes four foundation principles to follow, namely:<list list-type="order"><list-item><p>Short development cycles to drive learning and adapting to change;</p></list-item><list-item><p>Accountable, autonomous, and focused teams;</p></list-item><list-item><p>Validating work at the end of each development cycle;</p></list-item><list-item><p>Applying intelligent, rapid prototyping strategies.</p></list-item></list></p>
+        <p>Interestingly, while the first and the second principles are focused on the human factor, the remaining two are targeted at the product. Such a dichotomy seems to be reasonable and justified, taking into consideration the work breakdown structure in general.</p>
+      </sec>
+      <sec id="sec2dot3-applsci-12-08457">
+        <title>2.3. Related Work</title>
+        <p>The rationale behind adopting agile (Scrum) practices to integrate the development of both hardware and software is provided by Lima et al. who claim that &#x201C;the development of devices that combine hardware and software has created new challenges&#x201D;, since &#x201C;the new built devices have a short life cycle and frequently require upgrading&#x201D; [<xref ref-type="bibr" rid="B49-applsci-12-08457">49</xref>]. In this study, the authors introduced a development process so-called &#x201C;Agile and Co-Design&#x201D;, which consists of seven phases and expected outcomes: Conception (product vision), Setting-up (specifications), Design (deliverables), Definition Of Done (checklist), Testability (integration tests), Implementation (hardware and software), Verification (evaluation). The findings show the application of their approach enabled deep interaction between teams representing different areas of knowledge, and fostered knowledge exchange and innovation creation.</p>
+        <p>In a similar vein of cautionary optimism, Laanti stated that &#x201C;the benefits of incremental and iterative development of hardware may be as high as with software development&#x201D; [<xref ref-type="bibr" rid="B50-applsci-12-08457">50</xref>]. However, afterward, the obstacles are articulated: &#x201C;the idea of incremental design was causing problems&#x201D;, since &#x201C;people felt the hardware should have been created and tested as one entity&#x201D;, and &#x201C;it is not flexible the same way software is&#x201D;. On the other hand, the application of iterations &#x201C;can be used to mature the design&#x201D;.</p>
+        <p>The broad spectrum of issues and interests regarding the potential, transition and applicability of agile development in the hardware sector is given by Atzberger and Kristin [<xref ref-type="bibr" rid="B51-applsci-12-08457">51</xref>], and later by Atzberger et al. [<xref ref-type="bibr" rid="B52-applsci-12-08457">52</xref>]. The four categories of the findings concern:<list list-type="bullet"><list-item><p>constraints of physicality, the authors claim that &#x201C;the greatest hindrance is to realize potentially shippable increments in one iteration&#x201D;, and as a consequence &#x201C;the technical feasibility to produce prototypes&#x201D; is hardly achievable in certain industrial branches, due to &#x201C;the inability to break down the product into modules&#x201D; [<xref ref-type="bibr" rid="B51-applsci-12-08457">51</xref>];</p></list-item><list-item><p>agile mindset, an individual attitude toward understanding, collaborating, learning, adapting and growing in the spirit of trust, responsibility and ownership, is pointed out as a major challenge for not only individuals, but also for the company;</p></list-item><list-item><p>team distribution, the inability to work co-located resulted in a higher degree of communication needs between physically dispersed project participants (teams);</p></list-item><list-item><p>scaling, the ability to apply the principles, practices and outcomes in other projects (horizontal scaling), or at other levels of the organization (vertical scaling), in order to change the way people approach their own work and working with others.</p></list-item></list></p>
+        <p>Naturally, there are numerous other studies that have reported on the implementation of the agile approach, and its consequences on the project effectiveness and deliverables. Moreover, there are several well-known and admired industry corporations that are claimed to cultivate agile principles and practices, including Spacex [<xref ref-type="bibr" rid="B53-applsci-12-08457">53</xref>], Tesla [<xref ref-type="bibr" rid="B54-applsci-12-08457">54</xref>], General Motors [<xref ref-type="bibr" rid="B55-applsci-12-08457">55</xref>], and Toyota [<xref ref-type="bibr" rid="B56-applsci-12-08457">56</xref>], just to name a few. Nevertheless, agile is not a silver bullet that enables everyone to become adaptive, innovative, and resilient; neither is it an excuse to stop thinking, nor a panacea for solving all issues.</p>
+      </sec>
+    </sec>
+    <sec id="sec3-applsci-12-08457">
+      <title>3. Research Design</title>
+      <sec id="sec3dot1-applsci-12-08457">
+        <title>3.1. Case Setting</title>
+        <p>Tele and Radio Research Institute (TRRI) is located in Poland (Warsaw) and operates in the business industry. TRRI&#x2019;s mission is to conduct &#x201C;comprehensive and interdisciplinary scientific examinations and development activities on highly advanced technologies and innovations, in particular with regard to ICT systems, electronics, electronic installation and Industry 4.0 solutions&#x201D; [<xref ref-type="bibr" rid="B57-applsci-12-08457">57</xref>]. In 2019, the Institute became a part of The &#x141;ukasiewicz Research Network Institute, which, associating 26 research institutes with 8000 employees, located in 12 cities across Poland, is the third largest research network in Europe [<xref ref-type="bibr" rid="B58-applsci-12-08457">58</xref>]. For the sake of clarity and simplicity, henceforth, TRRI will be called the &#x201C;project partner&#x201D; (PP), or just a &#x201C;partner&#x201D;.</p>
+        <p>Meritus Software Systems (Meritus) is a software producer with its headquarters in Poland (Warsaw). Established in 1990, for over 30 years the company has earned the reputation of being a trustworthy and loyal business partner among cooperating companies. Meritus is a team of enthusiastic computer specialists devoted to developing highly efficient and usable software by following the modern patterns and trends in the development of IT systems. The landmark software products are: Pinquark Warehouse Management System, Geo Train AI, merSoft ERP, and skanujfakture.pl [<xref ref-type="bibr" rid="B10-applsci-12-08457">10</xref>]. Henceforward, Meritus will be called the &#x201C;project leader&#x201D; (PL), or simply the &#x201C;leader&#x201D;.</p>
+      </sec>
+      <sec id="sec3dot2-applsci-12-08457">
+        <title>3.2. Project Settings</title>
+        <p>The current study is entirely based on a project, performed in cooperation between the partner and the leader, entitled &#x201C;An Industry 4.0 Mobile Process Management System Supported by Artificial Intelligence&#x201D; (hereafter called the &#x201C;project&#x201D;). The project&#x2019;s budget was 1.2 million euro and was conducted between January 2019 and December 2021. The aim of the project was to develop and implement a cloud-based process management system, facilitated by six AI modules, available for both web-based and mobile users. The scope of the project falls into the smart factory domain, thus following the modern trend of automation and data exchange in manufacturing technologies, including cyber-physical systems, cloud and cognitive computing, and the Internet of Things. </p>
+        <p>It should be noted here that by definition, a &#x201C;smart factory&#x201D; refers to the workers and machinery related to the execution of their tasks; by design, a smart factory is flexible and re-configurable, low-cost, changeable, and thereby agile [<xref ref-type="bibr" rid="B59-applsci-12-08457">59</xref>].</p>
+      </sec>
+      <sec id="sec3dot3-applsci-12-08457">
+        <title>3.3. Project Context and Organization</title>
+        <p>To set up the context of the study, one of the most relevant solutions is to provide the scope of the project, which serves as a measurable and exogenous variable [<xref ref-type="bibr" rid="B60-applsci-12-08457">60</xref>]. In this line of thinking, first the requirements are briefly provided, regarding the hardware deliverables. More specifically, their features and properties, with the embedded software developed specifically for their needs, are discussed with the project schedule illustrating a summary of the physical device development process.</p>
+        <p>Remote monitoring and control of processes in technological areas, and thus the need to transmit large amounts of data while maintaining confidentiality, requires the use of efficient communication solutions that are characterized by high-performance embedded microcontrollers, while also maintaining a low price and reliable long-term operational time in specific environmental conditions that are often extreme and unfavorable for the operation of electronic systems of large-scale integration. To this end, the goal of the project was the development of a universal, cost-effective communication modem, which should be flexible enough to adapt to the changeable requirements imposed by data acquisition from different technological areas.</p>
+        <p>The guidelines for the hardware and software platforms were based on maximizing the functionality of the module solution for use in various technological areas with a strong emphasis on aspects of Machine to Machine (M2M) communication [<xref ref-type="bibr" rid="B61-applsci-12-08457">61</xref>] and Internet of Things (IoT) devices, especially devoted to industrial applications.</p>
+        <p>The hardware platform of the communication modem model was made in two iterations. In the first iteration, a model of the modem was made to test the functionality of the selected OSD335x solution and to check the validity of the solution in terms of the connection of the printed circuit board elements. The second, taking into account functional corrections and comments after EMC/LVD EMC tests.</p>
+        <p><bold>First production stage [main unit]</bold>. The communication module model design is divided into two blocks. The main unit block, integrating the SOM and Ethernet communication circuits, and the second on a separate PCB with communication circuits and connectors. This division was due to the effective distribution into functional blocks and the technological requirements for the PCB for the individual functional blocks. With the proposed division, a reduction in PCB manufacturing costs was achieved, as well as the fact that in case of an error resulting from incorrect functional assumptions, it can be corrected manually or the printed circuit can be improved with only one module, which reduces the manufacturing costs.</p>
+        <p><bold>First production stage [base unit]</bold>. The base unit includes connectors and add-on circuits required to communicate with sensors and measurement sensors. In the design of the communication modem model, it was assumed that the basic communication interface to the sensors and measurement sensors will be USB 2.0, with a high-speed, 480 MBit/s communication interface. USB 2.0 is a universal and standardized serial communication interface. One differential port and a possible 5 V power supply are required for data exchange. The USB 2.0 protocol is flexible and allows for the use of standardized data exchange protocols such as classes e.g., ACM, HID, mass storage as well as the definition of a custom class. It allows for a maximum of 256 devices on a single bus via HUB circuits.</p>
+        <p><bold>Second production stage [main unit]</bold>. The second iteration required amendments to components of the modem, including the microprocessor and Ethernet physical layer hardware unit layout, to optimize the size of the device to be more compact. The microprocessor was changed to a version with built-in e-MMC memory. The change allowed for the design to be optimized for component availability. e-MMC memories are among the difficult to access electronic components. The change in the Ethernet physical layer layout was dictated by replacing the chip with a more modern one and adding Media-Independent Interface (MII) support, which will make it possible to use Programmable Real-Time Units (PRUs) to implement the EtherCAT (Ethernet Control Automation Technology) and Profibus (PROcess FIeld BUS) protocols. While the former protocol was chosen as it fulfills both hard and soft real-time computing requirements, since it combines the efficient and relatively high-speed message transmission of Ethernet networks [<xref ref-type="bibr" rid="B62-applsci-12-08457">62</xref>], the latter was used because of its high speed and architecture, designed and optimized especially for communication between automation systems and decentralized devices [<xref ref-type="bibr" rid="B63-applsci-12-08457">63</xref>]. </p>
+        <p><bold>Second production stage [base unit]</bold>. The changes that were made in the second iteration were related to the optimization of the PCB dimensions. Comments after EMC testing were also introduced. The power supply for the module requires that a noise filter be added to the input and common mode ferrites be added to the Ethernet and USB interface lines.</p>
+      </sec>
+      <sec id="sec3dot4-applsci-12-08457">
+        <title>3.4. Research Methods</title>
+        <p>First and foremost, content analysis was used as the primary research method. By definition, according to Mackey, content analysis is &#x201C;any technique for making inferences by systematically and objectively identifying special characteristics of messages&#x201D; [<xref ref-type="bibr" rid="B64-applsci-12-08457">64</xref>]. In this case, we followed the guidelines defined by Krippendorff [<xref ref-type="bibr" rid="B65-applsci-12-08457">65</xref>], along with their practical assessment elaborated by Stemler [<xref ref-type="bibr" rid="B66-applsci-12-08457">66</xref>]. Therefore, the following six questions have been addressed and answered.</p>
+        <list list-type="order">
+          <list-item>
+            <p><bold>Which data are analyzed?</bold> Due to the project complexity, considering the number of planned tasks, time frames and the total number of hardware and software deliverables, the further investigation was strictly oriented toward issues and concerns related to the project management. More specifically, the focus was on the identification, analysis and evaluation of only those processes that regarded planning, organizing, leading and controlling the efforts of the project members, engaged on the side of both the leader and the partner.</p>
+          </list-item>
+          <list-item>
+            <p><bold>How are they defined?</bold> The data throughout the project was collected in a few digital repositories, including the data gathered by the online tools throughout the project duration, as well as the documents library available in the cloud storage.</p>
+          </list-item>
+          <list-item>
+            <p><bold>What is the population from which they are drawn?</bold> The population is limited to one project, in particular two data repositories owned by the leader and the partner.</p>
+          </list-item>
+          <list-item>
+            <p><bold>What is the context relative to which the data are analyzed?</bold> The context is specified by the goal of the study, which precisely indicates the scope and objectives for the researcher to follow. In particular, the data (information) must concern the implementation of agile practices throughout the project. In other words, a precedent or unrepeatable application of any agile practice was not considered for further investigation due to the limited analysis and evaluation.</p>
+          </list-item>
+          <list-item>
+            <p><bold>What are the boundaries of the analysis?</bold> Obviously, when the study concerns a single case, the results are not meant to be generalized. Therefore, it is correct to name generalizability as a limitation of the current, and any other, qualitative research.</p>
+          </list-item>
+        </list>
+        <p>To sum up, the content analysis was aimed at identifying, analyzing, and evaluating the project&#x2019;s documentation, including documents, reports, spreadsheets, information from work communication and collaboration tools, to extract the agile practices implemented throughout the project.</p>
+        <p>The second research method, applied to validate the obtained results from the documentation study, was an in-depth interview. According to Boyce and Neale, the in-depth interviewing technique involves &#x201C;conducting intensive individual interviews with a small number of respondents to explore their perspectives on a particular idea, program, or situation&#x201D; [<xref ref-type="bibr" rid="B67-applsci-12-08457">67</xref>]. Moreover, regarding the interview format, the standardized open-ended interview was adopted, since such a design allows the interviewees to &#x201C;contribute as much detailed information as they desire&#x201D; [<xref ref-type="bibr" rid="B68-applsci-12-08457">68</xref>]. Moreover, the interview was supported by a questionnaire (see <xref ref-type="app" rid="app1-applsci-12-08457">Appendix A</xref>). For the needs of this study, the process for conducting in-depth interviews consisted of five steps:
+		<list list-type="order"><list-item><p><bold>Plan</bold>. The identified stakeholders involved two representatives, one from the leader, and one from the partner. To reduce the bias resulting from insufficient experience and knowledge, the inclusion criteria were as follows:</p><list list-type="alpha-lower"><list-item><p>at least five years of professional experience;</p></list-item><list-item><p>involvement in the project throughout its duration;</p></list-item><list-item><p>managerial role in the project.</p></list-item></list></list-item></list></p>
+        <p>The two respondents were both males with over 20 years of professional experience in the IT sector. In the project, the first respondent (R1) worked in the position of project manager, while the second respondent (R2) held the role of research and development manager. Therefore, they were both positively classified;</p>
+        <list list-type="order">
+          <list-item>
+            <label>2.</label>
+            <p><bold>Develop instruments</bold>. The interview protocol and the questionnaire were designed around the three constructs of interest for this research, namely: (1) the rationale behind adopting the agile approach for the project, (2) the practices and tools applied, and finally (3) the performance evaluation. <xref ref-type="app" rid="app1-applsci-12-08457">Appendix A</xref> shows the details regarding both data collection instruments;</p>
+          </list-item>
+          <list-item>
+            <label>3.</label>
+            <p><bold>Collect data</bold>. The phone interviews took place in the period from April to May 2022. Alongside safety and health issues due to the outbreak of COVID-19, this approach is now becoming widely used [<xref ref-type="bibr" rid="B69-applsci-12-08457">69</xref>]. The data collection follow-up concerned an email request for each of the respondents to independently fill in the questionnaire;</p>
+          </list-item>
+          <list-item>
+            <label>4.</label>
+            <p><bold>Analyze data</bold>. To &#x201C;make sense&#x201D; of the collected data, a thematic analysis was conducted on the information gathered via the interview, while the survey data were compared and summarized by using the Google Sheets application;</p>
+          </list-item>
+          <list-item>
+            <label>5.</label>
+            <p><bold>Disseminate findings</bold>. The target audience does not only involve the project stakeholders, but also both computer science researchers and industry practitioners. To reach such a broad audience, our intention is to publish our work in open access mode, which means that our paper will be free of charge, digital and online, and free of most copyright and licensing restrictions. In addition, the paper preprint will also be posted in an electronic format and made available to the public on at least one preprint service.</p>
+          </list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec id="sec4-applsci-12-08457">
+      <title>4. Findings</title>
+      <p>The findings are scrutinized with regards to each question, where a strict partitioning is given to distinguish the three different areas of interest.</p>
+      <p>
+        <bold>Part I. Agile Adoption Rationale.</bold>
+      </p>
+      <p><bold>Q1. What were the most important reasons for adopting Agile in the consortium?</bold> Having in mind the experience and knowledge with respect to the reasons for the adoption of Agile in software development, there is strong agreement between the respondents regarding three of its outcomes:<list list-type="bullet"><list-item><p>accelerate software delivery;</p></list-item><list-item><p>improve business and IT alignment;</p></list-item><list-item><p>reduce project risk.</p></list-item></list></p>
+      <p>Moreover, they also agree that Agile adoption enhances:
+		  <list list-type="bullet"><list-item><p>the ability to manage changing priorities;</p></list-item><list-item><p>software quality;</p></list-item><list-item><p>improve engineering discipline.</p></list-item></list></p>
+      <p>However, there is no consensus on whether the agile-oriented organization (team) is able to better respond to volatile market conditions or enhance delivery predictability. Moreover, it seems that the respondents also disagree on the positive impact of agility on the team morale.</p>
+      <p>
+        <bold>Part II. Agile Methodology, Techniques and Practices Adoption.</bold>
+      </p>
+      <p><bold>Q2. Which agile approach was adopted?</bold> Both respondents described the applied methodology as &#x201C;iterative,&#x201D; emphasizing the split of the development process into multiple explicit interactions, each assumed to deliver required features.</p>
+      <p><bold>Q3: Which of the following Agile techniques and practices were used?</bold> Both respondents declared that three agile techniques were used during the project, namely: <list list-type="bullet"><list-item><p>release planning;</p></list-item><list-item><p>short iterations;</p></list-item><list-item><p>sprint/iteration planning.</p></list-item></list></p>
+      <p>Moreover, they both indicated the lack of using activities for determining which products or projects to work on, in which order, and for how long, termed agile portfolio planning. Second, in the case of estimation techniques, the usage of planning poker was not confirmed either for estimating user stories or tasks. Third, daily standups were not the practice adapted to discuss a project&#x2019;s progress at a high level. Fourthly, the respondents declared that it was found unnecessary to release increments frequently. Last but not least, Kanban, being a transparent and visual system for real-time communication of the workload capacity, was not implemented throughout the project. </p>
+      <p><bold>Q4. Which Agile planning and delivery tools did you use?</bold> From the set of 22 tools possible to select, the respondents agreed on three tools, including: <list list-type="bullet"><list-item><p>task board;</p></list-item><list-item><p>automated build tool;</p></list-item><list-item><p>unit test tool.</p></list-item></list></p>
+      <p>On the other hand, consensus was also reached on neglecting the majority of the planning and delivering tools, including the product road-mapping, along with the family of management tools related to requirements, product, and portfolio, as well as the customer idea.</p>
+      <p>Moreover, neither index cards nor timecards were used in the project. While the former are simply the tokens representing user stories, task breakdowns, backlog items or even reminders, and the latter are the method of recording and tracking the amount of an employee&#x2019;s time that is spent on each job. Second, no static analysis was performed along with story mapping to formulate new hardware features. In the case of work management, the Kanban board was not found useful. </p>
+      <p>Considering the system evaluation from the perspective of the external user, no automation test tools were deployed in the project. Interestingly, other tools that are highly appreciated from the software vendor&#x2019;s perspective were not found suitable in the case of a hardware manufacturer. These are:<list list-type="bullet"><list-item><p>bug tracking;</p></list-item><list-item><p>continuous integration tool;</p></list-item><list-item><p>release/ deployment automation tool;</p></list-item><list-item><p>wireframes.</p></list-item></list></p>
+      <p>Ultimately, in the case of project and knowledge management, the agile project management and Wiki tools were only declared to be used by the project leader, whereas the refactoring tool was strictly used by the project partner. </p>
+      <p><bold>Q5. Which agile planning tools did you use?</bold> While there were 21 tools to choose from, unexpectedly, each of the respondents indicated only one different tool: Atlassian Jira, in the case of the project leader, and Microsoft Excel, in the case of the project partner. The list of the other not implemented tools can be found in <xref ref-type="app" rid="app1-applsci-12-08457">Appendix A</xref>.</p>
+      <p>
+        <bold>Part III. Agile Adoption Evaluation.</bold>
+      </p>
+      <p><bold>Q6. Has the implementation of agile positively impacted each of the following areas within your company?</bold> Considering the 13 areas that were positively impacted by the implementation of agile practices and supported by the corresponding tools, there was no agreement between the respondents in any of these. Keeping in mind the question stated above, the first respondent identified three areas: <list list-type="bullet"><list-item><p>managing changing priorities;</p></list-item><list-item><p>predictability;</p></list-item><list-item><p>risk reduction;</p></list-item></list></p>
+      <p>which were assessed as neutral (intact) by the second respondent.</p>
+      <p>On the other hand, the second respondent declared five other areas, positively impacted by the agile implementation, namely: <list list-type="bullet"><list-item><p>delivery speed/time to market;</p></list-item><list-item><p>engineering discipline;</p></list-item><list-item><p>software quality;</p></list-item><list-item><p>team morale;</p></list-item><list-item><p>team productivity.</p></list-item></list></p>
+      <p>However, both respondents had a neutral view on three areas, including: business/IT alignment, software maintainability, and visibility.</p>
+      <p><bold>Q7. How has your organization measured the success of Agile delivery?</bold> Both respondents agreed on one thing only, which is that by managing the scope and schedules with an Agile-centric approach, their teams were able to deliver business value, measured by tangible and working product features, added in a fixed period of time.</p>
+      <p>Moreover, the second respondent indicated that within his organization, another ten measures were successfully implemented: budget vs. actual cost, customer retention customer and user satisfaction, defects into production, defects over time, iteration burndown, planned vs. actual release dates, team morale, test pass/fail over time, and velocity. </p>
+      <p><bold>Q8. What are the most significant barriers to adopting Agile practices in the consortium?</bold> There was one common barrier indicated when adopting agile practices which concerned the lack of business (customer, or product) understanding. </p>
+      <p>Nevertheless, considering the other twelve barriers, in the case of the following four, namely:</p>
+      <list list-type="bullet">
+        <list-item>
+          <p>fragmented tooling and project-related data/measurements;</p>
+        </list-item>
+        <list-item>
+          <p>general organization resistance to change;</p>
+        </list-item>
+        <list-item>
+          <p>pervasiveness of traditional development methods;</p>
+        </list-item>
+        <list-item>
+          <p>unwilling to admit mistakes and learn from delivery failure;</p>
+        </list-item>
+      </list>
+      <p>the answers were the opposite, while their total absence concerned the project leader, their presence affected the project partner.</p>
+      <p>Moreover, the latter also reported another two barriers encountered during the adoption of Agile practices regarding inconsistent processes and practices across teams, and organizational culture at odds with agile values.</p>
+      <p><bold>Q9. What are the benefits of adopting the release planning (TP10) technique?</bold> In total, eleven benefits were submitted under each respondent&#x2019;s independent evaluation, of which only the following three were found to be significant to a similar extent: <list list-type="bullet"><list-item><p>increased efficiency by highlighting the goals or deadline for release;</p></list-item><list-item><p>making high-quality plans;</p></list-item><list-item><p>increased visualization potential of release planning problems.</p></list-item></list></p>
+      <p>With some doubt from the first respondent, and strong or moderate belief from the second, the other five benefits of using the release planning technique concerned:<list list-type="bullet"><list-item><p>eliminating waste in the Planning Process;</p></list-item><list-item><p>setting clear expectations about the objectives and product features;</p></list-item><list-item><p>helping team members stay on track and complete their tasks on time;</p></list-item><list-item><p>increased flexibility and decreased development lead time;</p></list-item><list-item><p>supporting the identification and mitigation of potential issues and risks.</p></list-item></list></p>
+      <p>Ultimately, both respondents were not fully convinced of whether the release planning enabled the early identification of feature dependencies, and disagreed on the increased motivation of the developers, as well as on the mediation of multiple opinions.</p>
+      <p><bold>Q10. What are the benefits of adopting the short iterations (TP12) technique?</bold> There was mutual agreement that the shorter the iteration, the less process overhead is needed to keep things on course. Partial agreement of using short iterations was reached for the following seven benefits:<list list-type="bullet"><list-item><p>provide more-frequent feedback from customers than long iterations;</p></list-item><list-item><p>afford the team more opportunities to reflect on and improve their work practices;</p></list-item><list-item><p>deliver a rapid response to changes in priority without disrupting work in process;</p></list-item><list-item><p>foster scope management since it is easier to move the small backlog items around than the large ones;</p></list-item><list-item><p>eliminate internal process overheads by running short iterations since user stories are small units of work and the team can follow the iteration status in a simpler way;</p></list-item><list-item><p>support product adaptability since it is easy to introduce new features, change existing features, and make any other functional change;</p></list-item><list-item><p>support the team&#x2019;s ability to work on several features in parallel.</p></list-item></list></p>
+      <p>Finally, a different view was presented on the claim that short iterations enabled early problem detection since agile teams recognized process smells and acted on them immediately.</p>
+      <p>
+        <bold>Q11. What are the benefits of adopting sprint/iteration planning (TP14)?</bold>
+      </p>
+      <p>Unquestionably, sprint (iteration) planning was declared the enabler that positively influenced the product quality. Both respondents, representing the project leader and the project partner, partially agreed that using the sprint (iteration) planning technique brought the following benefits:<list list-type="bullet"><list-item><p>helps teams to control projects;</p></list-item><list-item><p>effective management of the product backlog;</p></list-item><list-item><p>provides an opportunity for team members to participate in planning and hence better understand the work assignments;</p></list-item><list-item><p>provides opportunities to build team cohesion and identification;</p></list-item><list-item><p>helps in understanding the user stories;</p></list-item><list-item><p>serves to validate something we do not understand, or something misinterpreted,</p></list-item><list-item><p>enables setting precise estimates for the task;</p></list-item><list-item><p>fosters knowledge-sharing and skill-improvement.</p></list-item></list></p>
+      <p>However, the respondents doubted whether the planning meetings helped to define the goals for each team member.</p>
+      <p><bold>Q12. What are the benefits of using a task board (PD17)?</bold> Full agreement was reached with regards to all three benefits submitted to the evaluation in relation to this question. Thus, it was declared that using a task board definitely:<list list-type="bullet"><list-item><p>ensures efficient diffusion of information relevant to the whole team;</p></list-item><list-item><p>enables the team to stay focused on the work progress;</p></list-item><list-item><p>allows the team to represent any relevant information.</p></list-item></list></p>
+      <p>On the other hand, it is a pity that the respondents did not provide any benefits other than the predefined ones.</p>
+      <p><bold>Q13. What are the benefits of using an automated build tool (PD3)?</bold> Without any doubt, both respondents pointed out that using an automated build tool improved product quality by supporting bug and error detection. Moreover, they also agreed that using such a tool contributed to:<list list-type="bullet"><list-item><p>saving time and money;</p></list-item><list-item><p>by keeping a history of builds and releases, it helps in investigating bugs and errors;</p></list-item><list-item><p>an increase in developers&#x2019; productivity since build automation ensures fast feedback;</p></list-item><list-item><p>acceleration of the product delivery by eliminating redundant tasks.</p></list-item></list></p>
+      <p><bold>Q14. What are the benefits of using a unit test tool (PD20)?</bold> The two highest appraised benefits of using a unit test tool are concerned with fostering a higher quality of individual components, that in consequence, lead to increasing the overall system resiliency; moreover, it is also claimed to increase the testers&#x2019; productivity. Additionally to these, the remaining advantages are related to:<list list-type="bullet"><list-item><p>early detection of specification deficiencies;</p></list-item><list-item><p>cost reduction;</p></list-item><list-item><p>easier source code refactoring.</p></list-item></list></p>
+      <p>Both respondents agreed that the sum of the benefits achieved was greater than the sum of the costs encountered. Among the main challenges of running an Agile development project with remote teams, there was one in common: keeping the final goal in mind. In other words, team members sometimes forgot that &#x201C;progress takes place when they work by this rule&#x201D;. Moreover, a few other issues were individually raised that concerned the differences between team members, regarding their knowledge, skills, and agile mindset, especially in the case of teams from organizations from different business sectors.</p>
+      <p>Last but not least, in the current case study, the organization and governance of the undertaken project (see <xref ref-type="fig" rid="applsci-12-08457-f001">Figure 1</xref>) were very similar to the Hybrid Stage-Gate approach. However, none of the respondents were familiar with its theoretical foundations, in contrast to the agile methodologies and frameworks. In general, considering the latter, the rationale behind its adoption was concerned with the aim of preventing and minimizing the risk of project failure. More specifically, the adoption of agile practices and techniques provided rewarding opportunities due to their emphasis on instant and close collaboration and communication, resulting in reducing, or even eliminating the information gap.</p>
+    </sec>
+    <sec id="sec5-applsci-12-08457" sec-type="discussion">
+      <title>5. Discussion</title>
+      <p>This study contributes to the existing literature by reporting and adding an important new investigation regarding agile hardware development. The growing interest among researchers in revisiting existing agile methodologies in the new domains has opened up new frontiers. In light of the evidence derived from our case study, a better understanding of implementing agility in hardware manufacturing is provided, drawing on the reasons for and against its adoption, and indicating the practices, techniques and tools applied. Moreover, the areas positively impacted by the agile implementation are highlighted with the corresponding evaluation measures deployed, along with the barriers and obstacles encountered. These findings may be of great importance for planning and specifying possible future agile implementations.</p>
+      <p>Regarding the other related studies, Atzberger and Paetzold argue that &#x201C;adaptations to the field of hardware development are inevitable, therefore, principles and practices are necessary for the companies to circumvent the hardware-related issues (&#x2026;)&#x201D; [<xref ref-type="bibr" rid="B51-applsci-12-08457">51</xref>]. In this vein of argument, Sharifi and Zhang claim that &#x201C;agility in manufacturing may be achieved through the implementation and integration of appropriate practices which provide the required abilities for a company to respond properly to changes&#x201D; [<xref ref-type="bibr" rid="B70-applsci-12-08457">70</xref>]. This claim has been confirmed by Montero et al., since &#x201C;it is possible to use principles and practices of agile hardware development to clarify and promote the robustness&#x201D; of manufacturing processes [<xref ref-type="bibr" rid="B8-applsci-12-08457">8</xref>]. Our findings are consistent with those similar reported observations. By documenting the case of agile implementation within the hardware domain, we deliver one more piece of evidence for supporting the agile-oriented mindset.</p>
+      <p>Nevertheless, the current study suffers from two main limitations associated with the research methods applied. First, since we are aware that there is no way to generalize the results obtained from this study, there is a need to design and perform more research in similar settings. Second, the data analysis was reliant on the project documentation (secondary data) and interviews (primary data) with the selected project stakeholders, which followed the project closure. Therefore, both data sources were qualitative in nature. In the case of the former, relevant reports were carefully selected and evaluated, whereas the latter was deliberately scrutinized to validate the study&#x2019;s results. Nevertheless, there is a risk of bias related to the human factor which could occur during the process of information analysis and synthesis. To sum up, more research is needed to confirm (or disprove) our findings.</p>
+    </sec>
+    <sec id="sec6-applsci-12-08457" sec-type="conclusions">
+      <title>6. Conclusions</title>
+      <p>In this paper, we report on selected outcomes from an agile implementation in a hardware manufacturing project. More specifically, this research is an attempt to answer the questions regarding the feasibility and validity of the implementation of agile-oriented techniques and practices, supported by the deployment of relevant tools.</p>
+      <p>The business implications, in terms of benefits resulting from the implementation of the agile techniques and practices to hardware development, concern three main areas:<list list-type="bullet"><list-item><p>achieving an effective risk mitigation strategy;</p></list-item><list-item><p>greater adaptability and innovation capacity;</p></list-item><list-item><p>effective communication and collaboration.</p></list-item></list></p>
+      <p>On the other hand, the business implications in terms of challenges are related to human nature, which is manifested by:<list list-type="bullet"><list-item><p>resistance to change;</p></list-item><list-item><p>a lack of or inadequate management support;</p></list-item><list-item><p>poor communication and collaboration.</p></list-item></list></p>
+      <p>Moreover, with the agile approach and the change in the way of thinking and working, an organization is able to create an environment that is open to new opportunities arising for its employees, including training, promotion, flexible working, job rotation, and job enrichment. Nevertheless, any manager should ask herself/himself: is my team ready to become agile? Yet, the mindset shift is the hardest to make for leaders. During the transition, the key element is to change their leadership style from telling the team what to do to mentoring the team.</p>
+      <p>Several open issues and questions present interesting research avenues. In particular, there are still very few studies that have investigated domains not related to the IT industry. These poorly explored landscapes, which provide valuable opportunities for future research, can provide more lessons regarding the effectiveness of collaboration and communication through the lens of agile techniques and practices.</p>
+    </sec>
+  </body>
+  <back>
+    <notes>
+      <title>Institutional Review Board Statement</title>
+      <p>Not applicable.</p>
+    </notes>
+    <notes>
+      <title>Informed Consent Statement</title>
+      <p>Not applicable.</p>
+    </notes>
+    <notes>
+      <title>Data Availability Statement</title>
+      <p>Not applicable.</p>
+    </notes>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>Special thanks are due to the two respondents for providing comprehensive and valuable answers to the questionnaire questions. </p>
+    </ack>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The author declares no conflict of interest. The funders had no role in the design of the study; in the collection, analyses, or interpretation of the data; in the writing of the manuscript, or in the decision to publish the results.</p>
+    </notes>
+    <app-group>
+      <app id="app1-applsci-12-08457">
+        <title>Appendix A. The Questionnaire</title>
+        <p>The questionnaire began with a short introduction that briefly describes the project. The first three parts are concerned with the following areas of the project undertaken: planning, execution, and evaluation. The last part aimed to collect the respondents&#x2019; demographic data.</p>
+        <p>
+          <bold>Part I. Agile Adoption Rationale and Selection.</bold>
+        </p>
+        <p><bold>Q1.</bold> What were the most important reasons for adopting Agile?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>1</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O1</td>
+              <td align="left" valign="middle">Accelerate software delivery</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O2</td>
+              <td align="left" valign="middle">Better manage distributed teams</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O3</td>
+              <td align="left" valign="middle">Better respond to volatile market conditions</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O4</td>
+              <td align="left" valign="middle">Enhance ability to manage changing priorities</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O5</td>
+              <td align="left" valign="middle">Enhance delivery predictability</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O6</td>
+              <td align="left" valign="middle">Enhance software quality</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O7</td>
+              <td align="left" valign="middle">Improve business and IT alignment</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O8</td>
+              <td align="left" valign="middle">Improve engineering discipline</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O9</td>
+              <td align="left" valign="middle">Improve project visibility</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O10</td>
+              <td align="left" valign="middle">Improve team morale</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O11</td>
+              <td align="left" valign="middle">Increase software maintainability</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O12</td>
+              <td align="left" valign="middle">Increase team productivity</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O13</td>
+              <td align="left" valign="middle">Reduce project cost</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">O14</td>
+              <td align="left" valign="middle">Reduce project risk</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">O15</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify:</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>1</sup> The answers for the items (excluding O15) were predefined with the following list of five items: (1) Definitely Not, (2) Probably Not, (3) Possibly, (4) Probably Yes, (5) Definitely Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p>
+          <bold>Part II. Agile Methodology, Techniques and Practices Adoption.</bold>
+        </p>
+        <p><bold>Q2</bold>. Which agile approach was adopted?</p>
+        <list list-type="alpha-lower">
+          <list-item>
+            <label>(a)</label>
+            <p>Scrum.</p>
+          </list-item>
+          <list-item>
+            <label>(b)</label>
+            <p>ScrumBan.</p>
+          </list-item>
+          <list-item>
+            <label>(c)</label>
+            <p>Kanban.</p>
+          </list-item>
+          <list-item>
+            <label>(d)</label>
+            <p>Iterative.</p>
+          </list-item>
+          <list-item>
+            <label>(e)</label>
+            <p>I don&#x2019;t know.</p>
+          </list-item>
+          <list-item>
+            <label>(f)</label>
+            <p>None.</p>
+          </list-item>
+        </list>
+        <p><bold>Q3.</bold> Which of the following Agile techniques and practices did you use?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>2</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP1</td>
+              <td align="left" valign="middle">Agile Portfolio planning</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP2</td>
+              <td align="left" valign="middle">Agile/Lean UX</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP3</td>
+              <td align="left" valign="middle">Common work area</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP4</td>
+              <td align="left" valign="middle">Daily standup</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP5</td>
+              <td align="left" valign="middle">Dedicated customer/product owner</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP6</td>
+              <td align="left" valign="middle">Frequent releases</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP7</td>
+              <td align="left" valign="middle">Kanban</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP8</td>
+              <td align="left" valign="middle">Planning Poker/Team Estimation</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP9</td>
+              <td align="left" valign="middle">Product roadmapping</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP10</td>
+              <td align="left" valign="middle">Release planning</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP11</td>
+              <td align="left" valign="middle">Retrospectives</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP12</td>
+              <td align="left" valign="middle">Short iterations</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP13</td>
+              <td align="left" valign="middle">Single team</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP14</td>
+              <td align="left" valign="middle">Sprint/Iteration planning</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP15</td>
+              <td align="left" valign="middle">Sprint/iteration reviews</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">TP16</td>
+              <td align="left" valign="middle">Story mapping</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">TP17</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify:</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>2</sup> The answers for the items (excluding TP17) were predefined with the following list of five items: (1) Definitely Not, (2) Probably Not, (3) Possibly, (4) Probably Yes, (5) Definitely Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q4.</bold> Which Agile planning and delivery tools did you use?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>3</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD1</td>
+              <td align="left" valign="middle">Agile Project Management Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD2</td>
+              <td align="left" valign="middle">Automated Acceptance Test Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD3</td>
+              <td align="left" valign="middle">Automated Build Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD4</td>
+              <td align="left" valign="middle">Bug Tracker</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD5</td>
+              <td align="left" valign="middle">Continuous Integration Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD6</td>
+              <td align="left" valign="middle">Customer Idea Management Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD7</td>
+              <td align="left" valign="middle">Index Cards</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD8</td>
+              <td align="left" valign="middle">Kanban Board</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD9</td>
+              <td align="left" valign="middle">Product and Portfolio Management (PPM) Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD10</td>
+              <td align="left" valign="middle">Product Roadmapping</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD11</td>
+              <td align="left" valign="middle">Refactoring Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD12</td>
+              <td align="left" valign="middle">Release/Deployment Automation Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD13</td>
+              <td align="left" valign="middle">Requirements Management Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD14</td>
+              <td align="left" valign="middle">Spreadsheet</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD15</td>
+              <td align="left" valign="middle">Static Analysis</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD16</td>
+              <td align="left" valign="middle">Story Mapping Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD17</td>
+              <td align="left" valign="middle">Task board</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD18</td>
+              <td align="left" valign="middle">Timecards</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD19</td>
+              <td align="left" valign="middle">Traditional Product Management Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD20</td>
+              <td align="left" valign="middle">Unit Test Tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD21</td>
+              <td align="left" valign="middle">Wiki tool</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PD22</td>
+              <td align="left" valign="middle">Wireframes</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">PD23</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify:</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>3</sup> The answers for the items (excluding PD23) were predefined with a list of two items: (1) No, and (2) Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q5.</bold> Which agile planning tools did you use?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>4</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT1</td>
+              <td align="left" valign="middle">Atlassian Jira</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT2</td>
+              <td align="left" valign="middle">Atlassian Jira Align</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT3</td>
+              <td align="left" valign="middle">Axosoft</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT4</td>
+              <td align="left" valign="middle">Azure DevOps</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT5</td>
+              <td align="left" valign="middle">Azure DevOps Server (Microsoft TFS)</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT6</td>
+              <td align="left" valign="middle">Broadcom Rally (CA Agile Central)</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT7</td>
+              <td align="left" valign="middle">Bugzilla</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT8</td>
+              <td align="left" valign="middle">Digital.ai Agility (formerly VersionOne)</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT9</td>
+              <td align="left" valign="middle">Digital.ai TeamForge (CollabNet TeamForge)</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT10</td>
+              <td align="left" valign="middle">Google Docs</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT11</td>
+              <td align="left" valign="middle">Hansoft</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT12</td>
+              <td align="left" valign="middle">HP Agile Manager</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT13</td>
+              <td align="left" valign="middle">HP Quality Center/ALM</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT14</td>
+              <td align="left" valign="middle">IBM Rational Team Concert</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT15</td>
+              <td align="left" valign="middle">In-house / self-made solution</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT16</td>
+              <td align="left" valign="middle">LeanKit</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT17</td>
+              <td align="left" valign="middle">Microsoft Excel</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT18</td>
+              <td align="left" valign="middle">Microsoft Project</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT19</td>
+              <td align="left" valign="middle">Pivotal Tracker</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT20</td>
+              <td align="left" valign="middle">Targetprocess</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">PT21</td>
+              <td align="left" valign="middle">Trello</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">PT22</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify:</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>4</sup> The answers for the items (excluding PT22) were predefined with a list of two items:(1) No, and (2) Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p>
+          <bold>Part III. Agile Adoption Evaluation.</bold>
+        </p>
+        <p><bold>Q6.</bold> Has the implementation of agile positively impacted each of the following areas within your company?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>5</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP1</td>
+              <td align="left" valign="middle">Business/IT alignment</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP2</td>
+              <td align="left" valign="middle">Cost reduction</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP3</td>
+              <td align="left" valign="middle">Delivery speed/time to market</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP4</td>
+              <td align="left" valign="middle">Engineering discipline</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP5</td>
+              <td align="left" valign="middle">Managing changing priorities</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP6</td>
+              <td align="left" valign="middle">Managing distributed teams</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP7</td>
+              <td align="left" valign="middle">Predictability</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP8</td>
+              <td align="left" valign="middle">Risk reduction</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP9</td>
+              <td align="left" valign="middle">Software maintainability</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP10</td>
+              <td align="left" valign="middle">Software quality</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP11</td>
+              <td align="left" valign="middle">Team morale</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP12</td>
+              <td align="left" valign="middle">Team productivity</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">IP13</td>
+              <td align="left" valign="middle">Visibility</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">IP14</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify:</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>5</sup> The answers for the items (excluding IP14) were predefined with the following list of five items: (1) Strongly disagree, (2) Disagree, (3) Neither agree nor disagree, (4) Agree, and (5) Strongly agree.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q7.</bold> How has your organization measured the success of Agile delivery?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>6</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME1</td>
+              <td align="left" valign="middle">Budget vs. actual cost</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME2</td>
+              <td align="left" valign="middle">Burn-up chart</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME3</td>
+              <td align="left" valign="middle">Business value delivered</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME4</td>
+              <td align="left" valign="middle">Cumulative flow chart</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME5</td>
+              <td align="left" valign="middle">Customer retention</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME6</td>
+              <td align="left" valign="middle">Customer/user satisfaction</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME7</td>
+              <td align="left" valign="middle">Cycle time</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME8</td>
+              <td align="left" valign="middle">Defect resolution</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME9</td>
+              <td align="left" valign="middle">Defects into production</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME10</td>
+              <td align="left" valign="middle">Defects over time</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME11</td>
+              <td align="left" valign="middle">Earned value</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME12</td>
+              <td align="left" valign="middle">Estimation accuracy</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME13</td>
+              <td align="left" valign="middle">Individual hours per iteration/week</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME14</td>
+              <td align="left" valign="middle">Iteration burndown</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME15</td>
+              <td align="left" valign="middle">Planned vs. actual release dates</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME16</td>
+              <td align="left" valign="middle">Planned vs. actual stories per iteration</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME17</td>
+              <td align="left" valign="middle">Product utilization</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME18</td>
+              <td align="left" valign="middle">Release burndown</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME19</td>
+              <td align="left" valign="middle">Revenue sales impact</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME20</td>
+              <td align="left" valign="middle">Scope change in a release</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME21</td>
+              <td align="left" valign="middle">Team morale</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME22</td>
+              <td align="left" valign="middle">Test pass/fail over time</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME23</td>
+              <td align="left" valign="middle">Velocity</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">ME24</td>
+              <td align="left" valign="middle">WIP, Work in Progress</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">ME25</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify: </td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>6</sup> The answers for the items (excluding ME25) were predefined with a list of two items:(1) No, and (2) Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q8.</bold> What are the most significant barriers to adopting Agile practices?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>7</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA1</td>
+              <td align="left" valign="middle">Fragmented tooling and project-related data/measurements</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA2</td>
+              <td align="left" valign="middle">General organization resistance to change</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA3</td>
+              <td align="left" valign="middle">Inadequate management support and sponsorship</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA4</td>
+              <td align="left" valign="middle">Inconsistent processes and practices across teams</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA5</td>
+              <td align="left" valign="middle">Insufficient training and education</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA6</td>
+              <td align="left" valign="middle">Lack of business/customer/product understanding</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA7</td>
+              <td align="left" valign="middle">Lack of skills/experience with agile methods</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA8</td>
+              <td align="left" valign="middle">Minimal collaboration and knowledge pairing</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA9</td>
+              <td align="left" valign="middle">Not enough leadership participation</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA10</td>
+              <td align="left" valign="middle">Organizational culture at odds with agile values</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA11</td>
+              <td align="left" valign="middle">Pervasiveness of traditional development methods</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA12</td>
+              <td align="left" valign="middle">Regulatory compliance or government issue</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA13</td>
+              <td align="left" valign="middle">Unwilling to admit mistakes and learn from delivery failure</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">BA14</td>
+              <td align="left" valign="middle">I don&#x2019;t know</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">BA15</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify:</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>7</sup> The answers for the items (excluding BA15) were predefined with the following list of five items: (1) Strongly disagree, (2) Disagree, (3) Neither agree nor disagree, (4) Agree, and (5) Strongly agree.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q9.</bold> What are the benefits of adopting the release planning (TP10) technique?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>8</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B1-TP10</td>
+              <td align="left" valign="middle">Eliminating Waste in the Planning Process </td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B2-TP10</td>
+              <td align="left" valign="middle">Increased Flexibility and Decreased Development Lead Time</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B3-TP10</td>
+              <td align="left" valign="middle">Increased Motivation of the Developers</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B4-TP10</td>
+              <td align="left" valign="middle">Mediation of multiple opinions</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B5-TP10</td>
+              <td align="left" valign="middle">Increased efficiency by highlighting the goals or deadline for release</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B6-TP10</td>
+              <td align="left" valign="middle">Making high-quality plans</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B7-TP10</td>
+              <td align="left" valign="middle">Increased visualization potential of release planning problems</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B8-TP10</td>
+              <td align="left" valign="middle">Setting clear expectations about the objectives and product features</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B9-TP10</td>
+              <td align="left" valign="middle">Early identification of feature dependencies</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B10-TP10</td>
+              <td align="left" valign="middle">Helping team members stay on track and complete their tasks on time</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B11-TP10</td>
+              <td align="left" valign="middle">Supporting the identification and mitigation of potential issues and risks</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">B12-TP10</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify: &#x2026;</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>8</sup> The answers for the items (excluding B12) were predefined with the following list of five items: (1) Definitely Not, (2) Probably Not, (3) Possibly, (4) Probably Yes, (5) Definitely Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q10.</bold> What are the benefits of adopting the short iterations (TP12) technique?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>9</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B1-TP12</td>
+              <td align="left" valign="middle">Provide more-frequent feedback from customers than long iterations</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B2-TP12</td>
+              <td align="left" valign="middle">Afford the team more opportunities to reflect on and improve their work practices</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B3-TP12</td>
+              <td align="left" valign="middle">Deliver a rapid response to changes in priority without disrupting work in process</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B4-TP12</td>
+              <td align="left" valign="middle">Enable early problem detection since agile teams recognize process smells and act on them immediately</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B5-TP12</td>
+              <td align="left" valign="middle">Foster scope management since it is easier to move the small backlog items around than the large ones</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B6-TP12</td>
+              <td align="left" valign="middle">Eliminate internal process overheads by running short iterations since user stories are small units of work and the team can follow the iteration status in a simpler way.</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B7-TP12</td>
+              <td align="left" valign="middle">The shorter the iteration, the less process overhead is needed to keep things on course.</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B8-TP12</td>
+              <td align="left" valign="middle">Support product adaptability since it is easy to introduce new features, change existing features, and make any other functional change</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B9-TP12</td>
+              <td align="left" valign="middle">Support the team&#x2019;s ability to work on several features in parallel </td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">B10-TP12</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify: &#x2026;</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>9</sup> The answers for the items (excluding B10) were predefined with the following list of five items: (1) Definitely Not, (2) Probably Not, (3) Possibly, (4) Probably Yes, (5) Definitely Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q11.</bold> What are the benefits of adopting sprint/iteration planning (TP14)?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>10</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B1-TP14</td>
+              <td align="left" valign="middle">Helps teams control projects</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B2-TP14</td>
+              <td align="left" valign="middle">Effective management of the product backlog</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B3-TP14</td>
+              <td align="left" valign="middle">Positively influences product quality</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B4-TP14</td>
+              <td align="left" valign="middle">Provides an opportunity for team members to participate in planning and hence better understand the work assignments </td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B5-TP14</td>
+              <td align="left" valign="middle">Provides opportunities to build team cohesion and identification</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B6-TP14</td>
+              <td align="left" valign="middle">Helps in understanding the user stories</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B7-TP14</td>
+              <td align="left" valign="middle">Serves to validate something we do not understand, or something misinterpreted</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B8-TP14</td>
+              <td align="left" valign="middle">Planning meetings help to define the goals for each team member</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B9-TP14</td>
+              <td align="left" valign="middle">Enables setting precise estimates for the task</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B10-TP14</td>
+              <td align="left" valign="middle">Fosters knowledge-sharing and skill-improvement</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">B11-TP14</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify: &#x2026;</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>10</sup> The answers for the items (excluding B11) were predefined with the following list of five items: (1) Definitely Not, (2) Probably Not, (3) Possibly, (4) Probably Yes, (5) Definitely Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q12.</bold> What are the benefits of using a task board (PD17)?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>11</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B1-PD17</td>
+              <td align="left" valign="middle">Ensures efficient diffusion of information relevant to the whole team</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B2-PD17</td>
+              <td align="left" valign="middle">Enables the team to stay focused on the work progress</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B3-PD17</td>
+              <td align="left" valign="middle">Allows the team to represent any relevant information</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">B4-PD17</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify: &#x2026;</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>11</sup> The answers for the items (excluding B4) were predefined with the following list of five items: (1) Definitely Not, (2) Probably Not, (3) Possibly, (4) Probably Yes, (5) Definitely Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q13.</bold> What are the benefits of using an automated build tool (PD3)?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>12</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B1-PD3</td>
+              <td align="left" valign="middle">Saving time and money</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B2-PD3</td>
+              <td align="left" valign="middle">By keeping a history of builds and releases, it helps in investigating bugs and errors</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B3-PD3</td>
+              <td align="left" valign="middle">Increases developers&#x2019; productivity since build automation ensures fast feedback</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B4-PD3</td>
+              <td align="left" valign="middle">Accelerates product delivery by eliminating redundant tasks</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B5-PD3</td>
+              <td align="left" valign="middle">Improves product quality by supporting bug and error detection</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">B6-PD3</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify: &#x2026;</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>12</sup> The answers for the items (excluding B6) were predefined with the following list of five items: (1) Definitely Not, (2) Probably Not, (3) Possibly, (4) Probably Yes, (5) Definitely Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q14.</bold> What are the benefits of using a unit test tool (PD20)?</p>
+        <array>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Code</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Item</bold>
+              </td>
+              <td align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">
+                <bold>Answer <sup>13</sup></bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B1-PD20</td>
+              <td align="left" valign="middle">Early detection of the specification deficiencies</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B2-PD20</td>
+              <td align="left" valign="middle">Fostering higher quality of individual components, and thus increase overall system resiliency</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B3-PD20</td>
+              <td align="left" valign="middle">Increases testers&#x2019; productivity</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B4-PD20</td>
+              <td align="left" valign="middle">Cost reduction</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">B5-PD20</td>
+              <td align="left" valign="middle">Easier refactoring the source code</td>
+              <td align="center" valign="middle"> </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">B6-PD20</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Other? Please specify: &#x2026;</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left" valign="middle"><sup>13</sup> The answers for the items (excluding B6) were predefined with the following list of five items: (1) Definitely Not, (2) Probably Not, (3) Possibly, (4) Probably Yes, (5) Definitely Yes.</td>
+            </tr>
+          </tbody>
+        </array>
+        <p><bold>Q15</bold>. In your opinion, considering the implementation of agile techniques and practices, is the sum of the benefits achieved greater than the sum of the costs encountered?</p>
+        <p>(1) Definitely Not, (2) Probably Not, (3) Possibly, (4) Probably Yes, (5) Definitely Yes.</p>
+        <p><bold>Q16</bold>. In your opinion, what are the main challenges of running an Agile development project with remote teams?</p>
+        <p><bold>Q17</bold>. What have been the most valuable lesson(s) learned in easing the adoption of agile practices and techniques?</p>
+        <p>
+          <bold>Part IV. The Respondent&#x2019;s Data.</bold>
+        </p>
+        <p><bold>Q18</bold>. What is your age?</p>
+        <p><bold>Q19</bold>. What is your sex?</p>
+        <p><bold>Q20</bold>. How many years of experience in the IT sector do you have?</p>
+        <p><bold>Q21</bold>. What was your role in the project?</p>
+        <p><bold>Q22</bold>. Were you involved in the project throughout its duration?</p>
+      </app>
+    </app-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-applsci-12-08457">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Denning</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>How to Make the Whole Organization &#x201C;Agile&#x201D;</article-title>
+          <source>Strategy Leadersh.</source>
+          <year>2016</year>
+          <volume>44</volume>
+          <fpage>10</fpage>
+          <lpage>17</lpage>
+          <pub-id pub-id-type="doi">10.1108/SL-06-2016-0043</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-applsci-12-08457">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hohl</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Kl&#xFC;nder</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>van Bennekum</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Lockard</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Gifford</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>M&#xFC;nch</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Stupperich</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Back to the Future: Origins and Directions of the &#x201C;Agile Manifesto&#x201D;&#x2014;Views of the Originators</article-title>
+          <source>J. Softw. Eng. Res. Dev.</source>
+          <year>2018</year>
+          <volume>6</volume>
+          <fpage>15</fpage>
+          <pub-id pub-id-type="doi">10.1186/s40411-018-0059-z</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-applsci-12-08457">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kannan</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Basit</surname>
+              <given-names>M.A.</given-names>
+            </name>
+            <name>
+              <surname>Bajaj</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Carrington</surname>
+              <given-names>A.R.</given-names>
+            </name>
+            <name>
+              <surname>Donahue</surname>
+              <given-names>I.B.</given-names>
+            </name>
+            <name>
+              <surname>Flahaven</surname>
+              <given-names>E.L.</given-names>
+            </name>
+            <name>
+              <surname>Medford</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Melaku</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Moran</surname>
+              <given-names>B.A.</given-names>
+            </name>
+            <name>
+              <surname>Saldana</surname>
+              <given-names>L.E.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>User Stories as Lightweight Requirements for Agile Clinical Decision Support Development</article-title>
+          <source>J. Am. Med. Inform. Assoc.</source>
+          <year>2019</year>
+          <volume>26</volume>
+          <fpage>1344</fpage>
+          <lpage>1354</lpage>
+          <pub-id pub-id-type="doi">10.1093/jamia/ocz123</pub-id>
+          <pub-id pub-id-type="pmid">31512730</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-applsci-12-08457">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Misra</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Kumar</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Kumar</surname>
+              <given-names>U.</given-names>
+            </name>
+            <name>
+              <surname>Fantazy</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Akhter</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Agile Software Development Practices: Evolution, Principles, and Criticisms</article-title>
+          <source>Int. J. Qual. Reliab. Manag.</source>
+          <year>2012</year>
+          <volume>29</volume>
+          <fpage>972</fpage>
+          <lpage>980</lpage>
+          <pub-id pub-id-type="doi">10.1108/02656711211272863</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-applsci-12-08457">
+        <label>5.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pikkarainen</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Salo</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Still</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Deploying Agile Practices in Organizations: A Case Study</article-title>
+          <source>Software Process Improvement, Proceedings of the 12th European Conference, EuroSPI 2005, Budapest, Hungary, 9&#x2013;11 November 2005</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Richardson</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Abrahamsson</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Messnarz</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Berlin/Heidelberg, Germany</publisher-loc>
+          <year>2005</year>
+          <fpage>16</fpage>
+          <lpage>27</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B6-applsci-12-08457">
+        <label>6.</label>
+        <element-citation publication-type="web">
+          <article-title>Why New Hardware Businesses Fail and How to Make Sure Yours Doesn&#x2019;t</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://predictabledesigns.com/13-reasons-why-hardware-startups-fail-and-how-to-make-sure-yours-doesnt/" ext-link-type="uri">https://predictabledesigns.com/13-reasons-why-hardware-startups-fail-and-how-to-make-sure-yours-doesnt/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-04-12">(accessed on 12 April 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B7-applsci-12-08457">
+        <label>7.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>P.M.</given-names>
+            </name>
+            <name>
+              <surname>Darrin</surname>
+              <given-names>A.G.</given-names>
+            </name>
+            <name>
+              <surname>Knuth</surname>
+              <given-names>A.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Agile Hardware and Software System Engineering for Innovation</article-title>
+          <source>Proceedings of the 2012 IEEE Aerospace Conference</source>
+          <conf-loc>Big Sky, MT, USA</conf-loc>
+          <conf-date>3&#x2013;10 March 2012</conf-date>
+          <fpage>1</fpage>
+          <lpage>10</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B8-applsci-12-08457">
+        <label>8.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Joaquin</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Alexander</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Matthias</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Jens</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Kristin</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Enhancing the Additive Manufacturing Process for Spare Parts by Applying Agile Hardware Development Principles</article-title>
+          <source>Proceedings of the 2019 IEEE 10th International Conference on Mechanical and Intelligent Manufacturing Technologies (ICMIMT)</source>
+          <conf-loc>Cape Town, South Africa</conf-loc>
+          <conf-date>15&#x2013;17 February 2019</conf-date>
+          <fpage>109</fpage>
+          <lpage>116</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B9-applsci-12-08457">
+        <label>9.</label>
+        <element-citation publication-type="web">
+          <article-title>The Tele and Radio Research Institute&#x2014;PPTF</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://pptf.pl/en/pptf-members/the-tele-and-radio-research-institute/" ext-link-type="uri">https://pptf.pl/en/pptf-members/the-tele-and-radio-research-institute/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-14">(accessed on 14 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B10-applsci-12-08457">
+        <label>10.</label>
+        <element-citation publication-type="web">
+          <article-title>We Are a Software Producer Using Artificial Intelligence&#x2014;Meritus Sp. z o.o</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://meritus.pl/en/" ext-link-type="uri">https://meritus.pl/en/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-16">(accessed on 16 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B11-applsci-12-08457">
+        <label>11.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Serova</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Kalmykov</surname>
+              <given-names>O.</given-names>
+            </name>
+          </person-group>
+          <article-title>On the Issue of Implementation of Agile and Strategy as a Practice Mixed-Method in Strategic Planning</article-title>
+          <source>Eurasian Business Perspectives, Proceedings of the 35nd Eurasia Business and Economics Society Conference, Rome, Italy, 7&#x2013;9 April 2021</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Bilgin</surname>
+              <given-names>M.H.</given-names>
+            </name>
+            <name>
+              <surname>Danis</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Demir</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Vale</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Cham, Switzerland</publisher-loc>
+          <year>2021</year>
+          <fpage>127</fpage>
+          <lpage>139</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B12-applsci-12-08457">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mkoba</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Marnewick</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Conceptual Framework for Auditing Agile Projects</article-title>
+          <source>IEEE Access</source>
+          <year>2020</year>
+          <volume>8</volume>
+          <fpage>126460</fpage>
+          <lpage>126476</lpage>
+          <pub-id pub-id-type="doi">10.1109/ACCESS.2020.3007874</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-applsci-12-08457">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jim&#xE9;nez</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Afonso</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Fernandes</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Using Agile Project Management in the Design and Implementation of Activity-Based Costing Systems</article-title>
+          <source>Sustainability</source>
+          <year>2020</year>
+          <volume>12</volume>
+          <elocation-id>10352</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/su122410352</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-applsci-12-08457">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Masood</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Farooq</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Benefits and Key Challenges of Agile Project Management under Recent Research Opportunities</article-title>
+          <source>Int. Res. J. Manag. Sci.</source>
+          <year>2017</year>
+          <volume>5</volume>
+          <fpage>20</fpage>
+          <lpage>28</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B15-applsci-12-08457">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cram</surname>
+              <given-names>W.A.</given-names>
+            </name>
+            <name>
+              <surname>Marabelli</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Have Your Cake and Eat It Too? Simultaneously Pursuing the Knowledge-Sharing Benefits of Agile and Traditional Development Approaches</article-title>
+          <source>Inf. Manag.</source>
+          <year>2018</year>
+          <volume>55</volume>
+          <fpage>322</fpage>
+          <lpage>339</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.im.2017.08.005</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-applsci-12-08457">
+        <label>16.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shameem</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Kumar</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Chandra</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Khan</surname>
+              <given-names>A.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Systematic Review of Success Factors for Scaling Agile Methods in Global Software Development Environment: A Client-Vendor Perspective</article-title>
+          <source>Proceedings of the 2017 24th Asia-Pacific Software Engineering Conference Workshops (APSECW)</source>
+          <conf-loc>Nanjing, China</conf-loc>
+          <conf-date>4&#x2013;8 December 2017</conf-date>
+          <fpage>17</fpage>
+          <lpage>24</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B17-applsci-12-08457">
+        <label>17.</label>
+        <element-citation publication-type="web">
+          <article-title>Benefits of Agile Project Management|Kanbanize</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://kanbanize.com/agile/project-management/benefits-of-agile" ext-link-type="uri">https://kanbanize.com/agile/project-management/benefits-of-agile</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-04-23">(accessed on 23 April 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B18-applsci-12-08457">
+        <label>18.</label>
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <collab>Agile Alliance</collab>
+          </person-group>
+          <article-title>Agile Alliance|2015</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.agilealliance.org/" ext-link-type="uri">https://www.agilealliance.org/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-02">(accessed on 2 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B19-applsci-12-08457">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paulk</surname>
+              <given-names>M.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Agile Methodologies and Process Discipline</article-title>
+          <source>J. Contrib.</source>
+          <year>2002</year>
+          <pub-id pub-id-type="doi">10.1184/R1/6620972.v1</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20-applsci-12-08457">
+        <label>20.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>de la Barra</surname>
+              <given-names>C.L.</given-names>
+            </name>
+            <name>
+              <surname>Crawford</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Soto</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Misra</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Monfroy</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Agile Software Development: It Is about Knowledge Management and Creativity</article-title>
+          <source>Computational Science and Its Applications&#x2014;ICCSA 2013, Proceedings of the 13th International Conference, ICCSA 2013, Ho Chi Minh City, Vietnam, 24&#x2013;27 June 2013</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Murgante</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Misra</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Carlini</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Torre</surname>
+              <given-names>C.M.</given-names>
+            </name>
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>H.-Q.</given-names>
+            </name>
+            <name>
+              <surname>Taniar</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Apduhan</surname>
+              <given-names>B.O.</given-names>
+            </name>
+            <name>
+              <surname>Gervasi</surname>
+              <given-names>O.</given-names>
+            </name>
+          </person-group>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Berlin/Heidelberg, Germany</publisher-loc>
+          <year>2013</year>
+          <fpage>98</fpage>
+          <lpage>113</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B21-applsci-12-08457">
+        <label>21.</label>
+        <element-citation publication-type="web">
+          <article-title>Manifesto for Agile Software Development</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://agilemanifesto.org/" ext-link-type="uri">https://agilemanifesto.org/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-04-23">(accessed on 23 April 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B22-applsci-12-08457">
+        <label>22.</label>
+        <element-citation publication-type="web">
+          <article-title>12 Principles behind the Agile Manifesto|Agile Alliance. Agile Alliance|2015</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/" ext-link-type="uri">https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-01">(accessed on 1 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B23-applsci-12-08457">
+        <label>23.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Flewelling</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <source>The The Agile Developer&#x2019;s Handbook: Get More Value from Your Software Development: Get the Best out of the Agile Methodology</source>
+          <publisher-name>Packt Publishing Ltd.</publisher-name>
+          <publisher-loc>Birmingham, UK</publisher-loc>
+          <year>2018</year>
+          <isbn>978-1-78728-073-1</isbn>
+        </element-citation>
+      </ref>
+      <ref id="B24-applsci-12-08457">
+        <label>24.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schwaber</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Sutherland</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Scrum Guide</article-title>
+          <source>The Definitive Guide to Scrum: The Rules of the Game</source>
+          <publisher-name>Creative Commons</publisher-name>
+          <publisher-loc>Mountain View, CA, USA</publisher-loc>
+          <year>2020</year>
+        </element-citation>
+      </ref>
+      <ref id="B25-applsci-12-08457">
+        <label>25.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ahmad</surname>
+              <given-names>M.O.</given-names>
+            </name>
+            <name>
+              <surname>Markkula</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Oivo</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Kanban in Software Development: A Systematic Literature Review</article-title>
+          <source>Proceedings of the 2013 39th Euromicro Conference on Software Engineering and Advanced Applications</source>
+          <conf-loc>Santander, Spain</conf-loc>
+          <conf-date>4&#x2013;6 September 2013</conf-date>
+          <fpage>9</fpage>
+          <lpage>16</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B26-applsci-12-08457">
+        <label>26.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beck</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Hendrickson</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Fowler</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <source>Planning Extreme Programming</source>
+          <publisher-name>Addison-Wesley Professional</publisher-name>
+          <publisher-loc>Boston, MA, USA</publisher-loc>
+          <year>2001</year>
+          <isbn>978-0-201-71091-5</isbn>
+        </element-citation>
+      </ref>
+      <ref id="B27-applsci-12-08457">
+        <label>27.</label>
+        <element-citation publication-type="web">
+          <article-title>15th Annual State of Agile Report|Digital.Ai</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://digital.ai/resource-center/analyst-reports/state-of-agile-report" ext-link-type="uri">https://digital.ai/resource-center/analyst-reports/state-of-agile-report</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-04-23">(accessed on 23 April 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B28-applsci-12-08457">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Khan</surname>
+              <given-names>A.A.</given-names>
+            </name>
+            <name>
+              <surname>Shameem</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Kumar</surname>
+              <given-names>R.R.</given-names>
+            </name>
+            <name>
+              <surname>Hussain</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>X.</given-names>
+            </name>
+          </person-group>
+          <article-title>Fuzzy AHP Based Prioritization and Taxonomy of Software Process Improvement Success Factors in Global Software Development</article-title>
+          <source>Appl. Soft Comput.</source>
+          <year>2019</year>
+          <volume>83</volume>
+          <fpage>105648</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.asoc.2019.105648</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-applsci-12-08457">
+        <label>29.</label>
+        <element-citation publication-type="thesis">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hallett</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Best Practices in Industry and CSE Senior Design</article-title>
+          <source>Diploma Thesis</source>
+          <publisher-name>University of Nebraska-Lincoln</publisher-name>
+          <publisher-loc>Lincoln, NE, USA</publisher-loc>
+          <day>19</day>
+          <month>April</month>
+          <year>2021</year>
+        </element-citation>
+      </ref>
+      <ref id="B30-applsci-12-08457">
+        <label>30.</label>
+        <element-citation publication-type="web">
+          <article-title>What Is a Daily Scrum?</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.scrum.org/resources/what-is-a-daily-scrum" ext-link-type="uri">https://www.scrum.org/resources/what-is-a-daily-scrum</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-16">(accessed on 16 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B31-applsci-12-08457">
+        <label>31.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lagerberg</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Skude</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Impact of Agile Principles and Practices on Large-Scale Software Development Projects: A Multiple-Case Study of Two Software Development Projects at Ericsson</article-title>
+          <source>Proceedings of the 2013 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement</source>
+          <conf-loc>Baltimore, MD, USA</conf-loc>
+          <conf-date>10&#x2013;11 October 2013</conf-date>
+        </element-citation>
+      </ref>
+      <ref id="B32-applsci-12-08457">
+        <label>32.</label>
+        <element-citation publication-type="web">
+          <article-title>What Is an Agile Iteration?|Wrike Agile Guide</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.wrike.com/agile-guide/faq/what-is-agile-iteration/" ext-link-type="uri">https://www.wrike.com/agile-guide/faq/what-is-agile-iteration/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-16">(accessed on 16 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B33-applsci-12-08457">
+        <label>33.</label>
+        <element-citation publication-type="web">
+          <article-title>What Is a Sprint?</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://airfocus.com/glossary/what-is-a-sprint/" ext-link-type="uri">https://airfocus.com/glossary/what-is-a-sprint/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-16">(accessed on 16 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B34-applsci-12-08457">
+        <label>34.</label>
+        <element-citation publication-type="web">
+          <article-title>What Is an Iteration?</article-title>
+          <source>Agile Alliance|2015.</source>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.agilealliance.org/glossary/iteration/#q=~(infinite~false~filters~(postType~(~&#x2019;page~&#x2019;post~&#x2019;aa_book~&#x2019;aa_event_session~&#x2019;aa_experience_report~&#x2019;aa_glossary~&#x2019;aa_research_paper~&#x2019;aa_video)~tags~(~&#x2019;iteration))~searchTerm~&#x2019;~sort~false~sortDirection~&#x2019;asc~page~1)" ext-link-type="uri">https://www.agilealliance.org/glossary/iteration/#q=~(infinite~false~filters~(postType~(~&#x2019;page~&#x2019;post~&#x2019;aa_book~&#x2019;aa_event_session~&#x2019;aa_experience_report~&#x2019;aa_glossary~&#x2019;aa_research_paper~&#x2019;aa_video)~tags~(~&#x2019;iteration))~searchTerm~&#x2019;~sort~false~sortDirection~&#x2019;asc~page~1)</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-03">(accessed on 3 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B35-applsci-12-08457">
+        <label>35.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dalton</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Kanban Board</article-title>
+          <source>Great Big Agile: An OS for Agile Leaders</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Dalton</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <publisher-name>Apress</publisher-name>
+          <publisher-loc>Berkeley, CA, USA</publisher-loc>
+          <year>2019</year>
+          <fpage>187</fpage>
+          <lpage>188</lpage>
+          <isbn>978-1-4842-4206-3</isbn>
+        </element-citation>
+      </ref>
+      <ref id="B36-applsci-12-08457">
+        <label>36.</label>
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Digital</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Agile Concepts: The Scrum Task Board</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://manifesto.co.uk/agile-concepts-scrum-task-board/" ext-link-type="uri">https://manifesto.co.uk/agile-concepts-scrum-task-board/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-16">(accessed on 16 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B37-applsci-12-08457">
+        <label>37.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wirdemann</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <source>Scrum Mit User Stories</source>
+          <publisher-name>Carl Hanser Verlag</publisher-name>
+          <publisher-loc>Munich, Germany</publisher-loc>
+          <year>2009</year>
+          <isbn>978-3-446-41656-7</isbn>
+        </element-citation>
+      </ref>
+      <ref id="B38-applsci-12-08457">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sreenivasan</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Kothandaraman</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Improving Processes by Aligning Capability Maturity Model Integration and the Scaled Agile Framework<sup>&#xAE;</sup></article-title>
+          <source>Glob. Bus. Organ. Excell.</source>
+          <year>2019</year>
+          <volume>38</volume>
+          <fpage>42</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="doi">10.1002/joe.21966</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B39-applsci-12-08457">
+        <label>39.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Putta</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Paasivaara</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Lassenius</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Adopting Scaled Agile Framework (SAFe) a Multivocal Literature Review</article-title>
+          <source>Proceedings of the 19th International Conference on Agile Software Development: Companion</source>
+          <conf-loc>New York, NY, USA</conf-loc>
+          <conf-date>21&#x2013;25 May 2018</conf-date>
+          <fpage>1</fpage>
+          <lpage>4</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B40-applsci-12-08457">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alqudah</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Razali</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>A Review of Scaling Agile Methods in Large Software Development</article-title>
+          <source>Int. J. Adv. Sci. Eng. Inf. Technol.</source>
+          <year>2016</year>
+          <volume>6</volume>
+          <fpage>828</fpage>
+          <lpage>837</lpage>
+          <pub-id pub-id-type="doi">10.18517/ijaseit.6.6.1374</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B41-applsci-12-08457">
+        <label>41.</label>
+        <element-citation publication-type="web">
+          <article-title>Core Values. Scaled Agile Framework</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.scaledagileframework.com/safe-core-values/#:~:text=The%20four%20Core%20Values%20of,participates%20in%20a%20SAFe%20portfolio" ext-link-type="uri">https://www.scaledagileframework.com/safe-core-values/#:~:text=The%20four%20Core%20Values%20of,participates%20in%20a%20SAFe%20portfolio</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-04">(accessed on 4 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B42-applsci-12-08457">
+        <label>42.</label>
+        <element-citation publication-type="web">
+          <article-title>Applying SAFe to Hardware Development. &#x201C;Scaled Agile Framework&#x201D;</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.scaledagileframework.com/applying-safe-to-hardware-development/" ext-link-type="uri">https://www.scaledagileframework.com/applying-safe-to-hardware-development/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-04">(accessed on 4 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B43-applsci-12-08457">
+        <label>43.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Justice</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Sammicheli</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <source>Scrum for Hardware</source>
+          <publisher-name>Independently Published</publisher-name>
+          <publisher-loc>Chicago, IL, USA</publisher-loc>
+          <year>2018</year>
+          <isbn>978-1-983373-31-2</isbn>
+        </element-citation>
+      </ref>
+      <ref id="B44-applsci-12-08457">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cooper</surname>
+              <given-names>R.G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Perspective: The Stage-gate<sup>&#xAE;</sup> Idea-to-launch Process&#x2014;Update, What&#x2019;s New, and Nexgen Systems</article-title>
+          <source>J. Prod. Innov. Manag.</source>
+          <year>2008</year>
+          <volume>25</volume>
+          <fpage>213</fpage>
+          <lpage>232</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1540-5885.2008.00296.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B45-applsci-12-08457">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cooper</surname>
+              <given-names>R.G.</given-names>
+            </name>
+            <name>
+              <surname>Sommer</surname>
+              <given-names>A.F.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Agile&#x2013;Stage-gate Hybrid Model: A Promising New Approach and a New Research Opportunity</article-title>
+          <source>J. Prod. Innov. Manag.</source>
+          <year>2016</year>
+          <volume>33</volume>
+          <fpage>513</fpage>
+          <lpage>526</lpage>
+          <pub-id pub-id-type="doi">10.1111/jpim.12314</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B46-applsci-12-08457">
+        <label>46.</label>
+        <element-citation publication-type="web">
+          <article-title>MAHD About Us: MAHD: The Definitive Agile for Hardware Development Resource</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://agileforhardware.org/introduction-to-the-mahd-framework/" ext-link-type="uri">https://agileforhardware.org/introduction-to-the-mahd-framework/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-04-14">(accessed on 14 April 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B47-applsci-12-08457">
+        <label>47.</label>
+        <element-citation publication-type="web">
+          <article-title>Agile for Hardware Home &gt; MAHD: The Definitive Agile for Hardware Development Resource</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://agileforhardware.org/" ext-link-type="uri">https://agileforhardware.org/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-07-20">(accessed on 20 July 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B48-applsci-12-08457">
+        <label>48.</label>
+        <element-citation publication-type="web">
+          <article-title>An Introduction to the MAHD Framework &gt; MAHD: The Definitive Agile for Hardware Development Resource</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://agileforhardware.org/complete-agile-for-hardware-framework/" ext-link-type="uri">https://agileforhardware.org/complete-agile-for-hardware-framework/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-04-14">(accessed on 14 April 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B49-applsci-12-08457">
+        <label>49.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lima</surname>
+              <given-names>G.L.B.</given-names>
+            </name>
+            <name>
+              <surname>Ferreira</surname>
+              <given-names>G.A.L.</given-names>
+            </name>
+            <name>
+              <surname>Saotome</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Da Cunha</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Dias</surname>
+              <given-names>L.A.V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Hardware Development: Agile and Co-Design</article-title>
+          <source>Proceedings of the 2015 12th International Conference on Information Technology&#x2014;New Generations</source>
+          <conf-loc>Las Vegas, NV, USA</conf-loc>
+          <conf-date>13&#x2013;15 April 2015</conf-date>
+          <fpage>784</fpage>
+          <lpage>787</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B50-applsci-12-08457">
+        <label>50.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Laanti</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Piloting Lean-Agile Hardware Development</article-title>
+          <source>Proceedings of the Scientific Workshop Proceedings of XP2016</source>
+          <publisher-name>Association for Computing Machinery</publisher-name>
+          <publisher-loc>New York, NY, USA</publisher-loc>
+          <year>2016</year>
+          <fpage>1</fpage>
+          <lpage>6</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B51-applsci-12-08457">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Atzberger</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Paetzold</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Current Challenges of Agile Hardware Development: What Are Still the Pain Points Nowadays?</article-title>
+          <source>Proc. Des. Soc. Int. Conf. Eng. Des.</source>
+          <year>2019</year>
+          <volume>1</volume>
+          <fpage>2209</fpage>
+          <lpage>2218</lpage>
+          <pub-id pub-id-type="doi">10.1017/dsi.2019.227</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B52-applsci-12-08457">
+        <label>52.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Atzberger</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Gerling</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Schrof</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Schmidt</surname>
+              <given-names>T.S.</given-names>
+            </name>
+            <name>
+              <surname>Weiss</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Paetzold</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolution of the Hype around Agile Hardware Development</article-title>
+          <source>Proceedings of the 2019 IEEE International Conference on Engineering, Technology and Innovation (ICE/ITMC)</source>
+          <conf-loc>Valbonne Sophia-Antipolis, France</conf-loc>
+          <conf-date>17&#x2013;19 June 2019</conf-date>
+          <fpage>1</fpage>
+          <lpage>8</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B53-applsci-12-08457">
+        <label>53.</label>
+        <element-citation publication-type="web">
+          <article-title>Does Spacex Use Agile?</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.EclipseAviation.com" ext-link-type="uri">https://www.EclipseAviation.com</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-04-04">(accessed on 4 April 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B54-applsci-12-08457">
+        <label>54.</label>
+        <element-citation publication-type="web">
+          <article-title>Tesla Agile Development: Product Management at Its Best|280 Group</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://280group.com/product-management-blog/tesla-agile-development/" ext-link-type="uri">https://280group.com/product-management-blog/tesla-agile-development/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-21">(accessed on 21 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B55-applsci-12-08457">
+        <label>55.</label>
+        <element-citation publication-type="web">
+          <article-title>General Motors Accelerates Transformation</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://media.gm.com/media/us/en/gm/home.detail.html/content/Pages/news/us/en/2018/nov/1126-gm.html" ext-link-type="uri">https://media.gm.com/media/us/en/gm/home.detail.html/content/Pages/news/us/en/2018/nov/1126-gm.html</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-21">(accessed on 21 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B56-applsci-12-08457">
+        <label>56.</label>
+        <element-citation publication-type="web">
+          <article-title>Agile Transformation Spotlight: The Success Story of Scrum &amp; Toyota</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.scrum.org/resources/agile-transformation-spotlight-success-story-scrum-toyota" ext-link-type="uri">https://www.scrum.org/resources/agile-transformation-spotlight-success-story-scrum-toyota</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-21">(accessed on 21 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B57-applsci-12-08457">
+        <label>57.</label>
+        <element-citation publication-type="gov">
+          <article-title>The Tele and Radio Research Institute</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://itr.lukasiewicz.gov.pl/en/" ext-link-type="uri">https://itr.lukasiewicz.gov.pl/en/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-04-13">(accessed on 13 April 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B58-applsci-12-08457">
+        <label>58.</label>
+        <element-citation publication-type="gov">
+          <article-title>About Us</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://lukasiewicz.gov.pl/en/about-us/" ext-link-type="uri">https://lukasiewicz.gov.pl/en/about-us/</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2022-05-21">(accessed on 21 May 2022)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B59-applsci-12-08457">
+        <label>59.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hozdic</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Smart Factory for Industry 4.0: A Review</article-title>
+          <source>IJMMT</source>
+          <year>2015</year>
+          <volume>7</volume>
+          <fpage>28</fpage>
+          <lpage>35</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B60-applsci-12-08457">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Poulis</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Poulis</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Plakoyiannaki</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Role of Context in Case Study Selection: An International Business Perspective</article-title>
+          <source>Int. Bus. Rev.</source>
+          <year>2013</year>
+          <volume>22</volume>
+          <fpage>304</fpage>
+          <lpage>314</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ibusrev.2012.04.003</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B61-applsci-12-08457">
+        <label>61.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>MR</surname>
+              <given-names>A.R.</given-names>
+            </name>
+            <name>
+              <surname>Kaminski</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Pepin</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Opportunities for Industry 4.0 to Support Remanufacturing</article-title>
+          <source>Appl. Sci.</source>
+          <year>2018</year>
+          <volume>8</volume>
+          <elocation-id>1177</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/app8071177</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B62-applsci-12-08457">
+        <label>62.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seno</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Zunino</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>A Simulation Approach to a Real-Time Ethernet Protocol: EtherCAT</article-title>
+          <source>Proceedings of the 2008 IEEE International Conference on Emerging Technologies and Factory Automation, IEEE</source>
+          <conf-loc>Hamburg, Germany</conf-loc>
+          <conf-date>15&#x2013;18 September 2008</conf-date>
+          <fpage>440</fpage>
+          <lpage>443</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B63-applsci-12-08457">
+        <label>63.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abhish</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Rakesh</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Real-Time Analysis of a Multi-Client Multi-Server Architecture for Networked Control Systems</article-title>
+          <source>J. Eng. Appl. Sci.</source>
+          <year>2015</year>
+          <volume>10</volume>
+          <fpage>7522</fpage>
+          <lpage>7526</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B64-applsci-12-08457">
+        <label>64.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mackey</surname>
+              <given-names>D.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Content Analysis</article-title>
+          <source>The Encyclopedia of Criminology and Criminal Justice</source>
+          <publisher-name>John Wiley &amp; Sons, Ltd.</publisher-name>
+          <publisher-loc>Hoboken, NJ, USA</publisher-loc>
+          <year>2014</year>
+          <fpage>1</fpage>
+          <lpage>5</lpage>
+          <isbn>978-1-118-51738-3</isbn>
+        </element-citation>
+      </ref>
+      <ref id="B65-applsci-12-08457">
+        <label>65.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krippendorff</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <source>Content Analysis: An Introduction to Its Methodology</source>
+          <publisher-name>SAGE Publications</publisher-name>
+          <publisher-loc>Thousand Oaks, CA, USA</publisher-loc>
+          <year>2018</year>
+          <isbn>978-1-5063-9567-8</isbn>
+        </element-citation>
+      </ref>
+      <ref id="B66-applsci-12-08457">
+        <label>66.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stemler</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>An Overview of Content Analysis</article-title>
+          <source>Pract. Assess. Res. Eval.</source>
+          <year>2019</year>
+          <volume>7</volume>
+          <fpage>17</fpage>
+          <pub-id pub-id-type="doi">10.7275/z6fm-2e34</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B67-applsci-12-08457">
+        <label>67.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boyce</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Neale</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <source>Conducting in-Depth Interviews: A Guide for Designing and Conducting in-Depth Interviews for Evaluation Input</source>
+          <publisher-name>Pathfinder International</publisher-name>
+          <publisher-loc>Watertown, MA, USA</publisher-loc>
+          <year>2006</year>
+        </element-citation>
+      </ref>
+      <ref id="B68-applsci-12-08457">
+        <label>68.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Turner</surname>
+              <given-names>D.W.</given-names>
+              <suffix>III</suffix>
+            </name>
+          </person-group>
+          <article-title>Qualitative Interview Design: A Practical Guide for Novice Investigators</article-title>
+          <source>Qual. Rep.</source>
+          <year>2010</year>
+          <volume>15</volume>
+          <fpage>754</fpage>
+          <lpage>760</lpage>
+          <pub-id pub-id-type="doi">10.46743/2160-3715/2010.1178</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B69-applsci-12-08457">
+        <label>69.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mousavi</surname>
+              <given-names>M.S.</given-names>
+            </name>
+            <name>
+              <surname>Fararouei</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Afsar-Kazerooni</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Nasirian</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Ghaem</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Evaluation of Conducting Phone Interviews on Sexual Behavior: An Iranian Population-Based Study</article-title>
+          <source>Shiraz E-Med. J.</source>
+          <year>2022</year>
+          <volume>23</volume>
+          <pub-id pub-id-type="doi">10.5812/semj-118708</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B70-applsci-12-08457">
+        <label>70.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sharifi</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z.</given-names>
+            </name>
+          </person-group>
+          <article-title>Agile Manufacturing in Practice&#x2014;Application of a Methodology</article-title>
+          <source>Int. J. Oper. Prod. Manag.</source>
+          <year>2001</year>
+          <volume>21</volume>
+          <fpage>772</fpage>
+          <lpage>794</lpage>
+          <pub-id pub-id-type="doi">10.1108/01443570110390462</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="display-objects">
+      <title>Figure</title>
+      <fig id="applsci-12-08457-f001" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Overview of the generic Stage-Gate system. Source: [<xref ref-type="bibr" rid="B44-applsci-12-08457">44</xref>].</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="applsci-12-08457-g001.tif"/>
+      </fig>
+    </sec>
+    <fn-group>
+      <fn>
+        <p><bold>Publisher&#x2019;s Note:</bold> MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>
